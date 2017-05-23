@@ -653,6 +653,9 @@ tbody {
 .parallax-bg-3 {
 	background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;
 }
+.parallax-bg-md {
+	background: url("../images/美登一览图.jpg") 50% 0px no-repeat;
+}
 
 /* Custom Grid
 ---------------------------------- */

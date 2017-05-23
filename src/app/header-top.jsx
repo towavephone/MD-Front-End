@@ -38,12 +38,12 @@ var Index = React.createClass({
 							<div id="header-top-second" className="clearfix">
 								<div className="header-top-dropdown">
 									<div className="btn-group dropdown">
-										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-search"></i> Search</button>
+										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-search"></i> 搜索</button>
 										<ul className="dropdown-menu dropdown-menu-right dropdown-animation">
 											<li>
 												<form role="search" className="search-box">
 													<div className="form-group has-feedback">
-														<input type="text" className="form-control" placeholder="Search"/>
+														<input type="text" className="form-control" placeholder="请输入关键字"/>
 														<i className="fa fa-search form-control-feedback"></i>
 													</div>
 												</form>
@@ -51,28 +51,28 @@ var Index = React.createClass({
 										</ul>
 									</div>
 									<div className="btn-group dropdown">
-										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-user"></i> Login</button>
+										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-user"></i> 登录</button>
 										<ul className="dropdown-menu dropdown-menu-right dropdown-animation">
 											<li>
 												<form className="login-form">
 													<div className="form-group has-feedback">
-														<label className="control-label">Username</label>
+														<label className="control-label">用户名</label>
 														<input type="text" className="form-control" placeholder=""/>
 														<i className="fa fa-user form-control-feedback"></i>
 													</div>
 													<div className="form-group has-feedback">
-														<label className="control-label">Password</label>
+														<label className="control-label">密码</label>
 														<input type="password" className="form-control" placeholder=""/>
 														<i className="fa fa-lock form-control-feedback"></i>
 													</div>
-													<button type="submit" className="btn btn-group btn-dark btn-sm">Log In</button>
+													<button type="submit" className="btn btn-group btn-dark btn-sm">登录</button>
 													<span>or</span>
-													<button type="submit" className="btn btn-group btn-default btn-sm">Sing Up</button>
+													<button type="submit" className="btn btn-group btn-default btn-sm">注册</button>
 													<ul>
-														<li><a href="#">Forgot your password?</a></li>
+														<li><a href="#">忘记密码？</a></li>
 													</ul>
 													<div className="divider"></div>
-													<span className="text-center">Login with</span>
+													<span className="text-center">更换登录方式</span>
 													<ul className="social-links clearfix">
 														<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
 														<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
@@ -83,15 +83,15 @@ var Index = React.createClass({
 										</ul>
 									</div>
 									<div className="btn-group dropdown">
-										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-shopping-cart"></i> Cart (8)</button>
+										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-shopping-cart"></i> 购物车 (8)</button>
 										<ul className="dropdown-menu dropdown-menu-right dropdown-animation cart">
 											<li>
 												<table className="table table-hover">
 													<thead>
 														<tr>
-															<th className="quantity">QTY</th>
-															<th className="product">Product</th>
-															<th className="amount">Subtotal</th>
+															<th className="quantity">数量</th>
+															<th className="product">产品</th>
+															<th className="amount">单价</th>
 														</tr>
 													</thead>
 													<tbody>
@@ -111,14 +111,14 @@ var Index = React.createClass({
 															<td className="amount">$1499.00</td>
 														</tr>
 														<tr>
-															<td className="total-quantity" colSpan="2">Total 8 Items</td>
+															<td className="total-quantity" colSpan="2">总共 8 个</td>
 															<td className="total-amount">$1997.00</td>
 														</tr>
 													</tbody>
 												</table>
 												<div className="panel-body text-right">
-												<a href="shop-cart.html" className="btn btn-group btn-default btn-sm">View Cart</a>
-												<a href="shop-checkout.html" className="btn btn-group btn-default btn-sm">Checkout</a>
+												<a href="shop-cart.html" className="btn btn-group btn-default btn-sm">查看购物车</a>
+												<a href="shop-checkout.html" className="btn btn-group btn-default btn-sm">支付</a>
 												</div>
 											</li>
 										</ul>
