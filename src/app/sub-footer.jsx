@@ -7,7 +7,7 @@ var Index = React.createClass({
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
-								<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+								<p>版权 &copy; 2017.广东美登纸业有限公司，本公司保留一切版权</p>
 							</div>
 							<div className="col-md-4">
 								<nav className="navbar navbar-default" role="navigation">

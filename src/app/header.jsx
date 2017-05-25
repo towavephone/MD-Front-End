@@ -62,7 +62,7 @@ var Index = React.createClass({
 						<div className="col-md-2">
 							<div className="header-left clearfix">
 								<div className="logo">
-									<a href="#app/index"><img id="logo" src="../dist/images/美登标志.png" alt="iDea"/></a>
+									<a href="#app/index"><img id="logo" src="../dist/images/美登logo.gif" alt="iDea"/></a>
 								</div>
 								<div className="site-slogan">
 									广东美登纸业有限公司
@@ -87,7 +87,7 @@ var Index = React.createClass({
 													<li className="dropdown">
 														<a href="#about/index" className="dropdown-toggle" data-toggle="dropdown">关于美登</a>
 														<ul className="dropdown-menu">
-															<li><a href="index.html">公司简介</a></li>
+															<li><a href="index.html">公司介绍</a></li>
 															<li><a href="index-2.html">领导团队</a></li>
 															<li><a href="index-3.html">资质荣誉</a></li>
 															<li><a href="index-4.html">企业文化</a></li>

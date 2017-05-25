@@ -3746,17 +3746,21 @@ a.overlay.small i {
 /* Logo
 ---------------------------------- */
 .logo img {
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-ms-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-	width: 60%;
-	margin:auto
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	width: 40%;
+	margin:auto;
 }
+
 .logo img:hover {
-	opacity: 0.85;
-	filter: alpha(opacity=85);
+	transform: scale(1.2);;
+	-ms-transform: scale(1.2);;		/* IE 9 */
+	-webkit-transform: scale(1.2);;	/* Safari and Chrome */
+	-o-transform: scale(1.2);;		/* Opera */
+	-moz-transform: scale(1.2);;		/* Firefox */
 }
 .main-container .logo img {
 	margin: 0 auto;

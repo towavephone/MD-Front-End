@@ -8,14 +8,14 @@ var Index = React.createClass({
 						<div className="container">
 							<div className="row">
 								<div className="col-md-8 col-md-offset-2">
-									<h2 className="title">Just Perfect!</h2>
+									<h2 className="title">性能优越!</h2>
 									<div className="testimonial-image">
-										<img src="../../dist/images/testimonial-1.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
+										<img src="../../dist/images/施文博.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
 									</div>
 									<div className="testimonial-body">
-										<p>Sed ut perspiciatis unde omnis iste natu error sit voluptatem accusan tium dolore laud antium,  totam rem dolor sit amet tristique pulvinar, turpis arcu rutrum nunc, ac laoreet turpis augue a justo.</p>
-										<div className="testimonial-info-1">- Jane Doe</div>
-										<div className="testimonial-info-2">By Company</div>
+										<p>美登公司的产品性能优越，做出的纸尿裤产品吸水性远超其他同类产品，同时质量非常稳定，相信美登品质。</p>
+										<div className="testimonial-info-1">- 施文博</div>
+										<div className="testimonial-info-2">By 福建恒安集团董事局主席</div>
 									</div>
 								</div>
 							</div>
@@ -25,14 +25,14 @@ var Index = React.createClass({
 						<div className="container">
 							<div className="row">
 								<div className="col-md-8 col-md-offset-2">
-									<h2 className="title">Wow amazing!</h2>
+									<h2 className="title">服务周到!</h2>
 									<div className="testimonial-image">
-										<img src="./../dist/images/testimonial-2.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
+										<img src="./../dist/images/高原豪久.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
 									</div>
 									<div className="testimonial-body">
-										<p>Turpis arcu rutrum nunc, ac laoreet turpis augue a justo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, esse, animi maxime voluptate tempore at sunt labore incidunt nulla dignissimos iusto ad similique inventore distinctio quam repellendus itaque minus minima.</p>
-										<div className="testimonial-info-1">- John Doe</div>
-										<div className="testimonial-info-2">By Company</div>
+										<p>美登公司的服务周到，当天的订单基本上2,3天就完成，一旦有质量问题支持无条件退货。</p>
+										<div className="testimonial-info-1">- 高原豪久</div>
+										<div className="testimonial-info-2">By 尤妮佳株式会社 代表取缔役 社长执行役</div>
 									</div>
 								</div>
 							</div>
@@ -42,14 +42,14 @@ var Index = React.createClass({
 						<div className="container">
 							<div className="row">
 								<div className="col-md-8 col-md-offset-2">
-									<h2 className="title">Thanks!</h2>
+									<h2 className="title">性价比高!</h2>
 									<div className="testimonial-image">
-										<img src="./../dist/images/testimonial-3.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
+										<img src="./../dist/images/邵青峰.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
 									</div>
 									<div className="testimonial-body">
-										<p>Phosfluorescently e-enable adaptive synergy for strategic quality vectors. Continually transform fully tested expertise with competitive technologies ac laoreet turpis augue a justo.</p>
-										<div className="testimonial-info-1">- John Doe</div>
-										<div className="testimonial-info-2">By Company</div>
+										<p>美登产品虽然比其他同类产品要贵，但胜在质量稳定，用在本公司的产品上就是放心。</p>
+										<div className="testimonial-info-1">- 邵青峰</div>
+										<div className="testimonial-info-2">By 金佰利（中国）有限公司总裁</div>
 									</div>
 								</div>
 							</div>
