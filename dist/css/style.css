@@ -4129,7 +4129,7 @@ footer:not(.light) .footer-content .tag a,
 .header-top .social-links li {
 	padding: 3px 5px 2px;
 	border-right: 1px solid #e3e3e3;
-	margin: 0;
+	margin-bottom: -6px;
 }
 .header-top .social-links li:hover {
 	background-color: #fafafa;
@@ -4144,7 +4144,6 @@ footer:not(.light) .footer-content .tag a,
 	border: none;
 	width: 25px;
 	height: 30px;
-	color: #999999;
 	background-color: transparent;
 	border-color: transparent;
 }

@@ -296,6 +296,16 @@ function imgLoaded (selector, cb) {
     });
 }
 
+function getHashInfo () {
+    var url = location.hash.split('?')[0].substring(1);
+    var params = location.hash.split('?')[1] ? location.hash.split('?')[1].split('&') : null;
+    var data = {};
+    for (var i in params) {
+        data[params[i].split('=')[0]] = params[i].split('=')[1];
+    }
+    return {data: data, url: url};
+}
+
 module.exports = {
     alert: alert,
     confirm: confirm,
@@ -309,5 +319,6 @@ module.exports = {
     setValue: setValue,
     onChange: onChange,
     validator: validator,
-    imgLoaded: imgLoaded
+    imgLoaded: imgLoaded,
+    getHashInfo: getHashInfo
 };

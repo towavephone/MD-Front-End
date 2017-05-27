@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CompressionPlugin = require('compression-webpack-plugin');
 module.exports = {
     entry: {
         app: [
@@ -59,6 +60,7 @@ module.exports = {
         new webpack.optimize.DedupePlugin(),
         // 压缩js
         new webpack.optimize.UglifyJsPlugin({
+            comments: false,
             compress: {warnings: false},
             output: {comments: false}
         }),
@@ -73,6 +75,13 @@ module.exports = {
         // 把多个小模块进行合并，以减少文件的大小
         new webpack.optimize.MinChunkSizePlugin({minChunkSize: 30000}),
         // 抽离css
-        new ExtractTextPlugin('[name].[contenthash:6].css', {allChunks: false})
+        new ExtractTextPlugin('[name].[contenthash:6].css', {allChunks: false}),
+        new CompressionPlugin({
+            asset: '[path].gz[query]',
+            algorithm: 'gzip',
+            test: /\.(js|html|css)$/,
+            threshold: 10240,
+            minRatio: 0.8
+        })
     ]
 };

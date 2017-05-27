@@ -33,7 +33,7 @@ var Index = React.createClass({
 											<li><a href="index.html">首页</a></li>
 											<li><a href="blog-right-sidebar.html">关于我们</a></li>
 											<li><a href="portfolio-3col.html">产品展示</a></li>
-											<li><a href="page-about.html"></a>招聘中心</li>
+											<li><a href="page-about.html">招聘中心</a></li>
 											<li><a href="page-contact.html">联系我们</a></li>
 										</ul>
 									</nav>

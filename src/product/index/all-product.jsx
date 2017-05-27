@@ -1,15 +1,128 @@
 var React = require('react');
 var Index = React.createClass({
+    getDefaultProps: function () {
+        return {
+            products: [
+                {
+                    structure: 'A + B',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + C',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + A',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'C + C',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + E',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'C + E',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'D + E',
+                    img: '../../dist/images/MD-1.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + A',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + C',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + D',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'C + B + D',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + E',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'D + B + E',
+                    img: '../../dist/images/MD-2.png',
+                    detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + B + A',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 50, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + B + C',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + B + B',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + B + E',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + E + E',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + E + C',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                },
+                {
+                    structure: 'A + B + E + D',
+                    img: '../../dist/images/MD-3.png',
+                    detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
+                }
+            ]
+        };
+    },
     render: function () {
         return (
 			<div>
-                <h1 className="page-title">Shop</h1>
+                <h1 className="page-title">产品一览</h1>
                 <div className="separator-2"></div>
-                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nulla suscipit <br className="hidden-sm hidden-xs"/> unde rerum mollitia dolorum.</p>
+                <ul className="list-icons">
+                    <li><i className="fa fa-angle-right"></i> A：蓬松无尘纸（平方克重：40g/m<sup>2</sup>~60g/m<sup>2</sup>）</li>
+                    <li><i className="fa fa-angle-right"></i> B：柔软扩散导流层无纺布 （平方克重：25g/m<sup>2</sup>~60g/m<sup>2</sup>）</li>
+                    <li><i className="fa fa-angle-right"></i> C：小白纸（平方克重：14g/m<sup>2</sup>、18g/m<sup>2</sup>）</li>
+                    <li><i className="fa fa-angle-right"></i> D：亲水布（平方克重：8g/m<sup>2</sup>、10g/m<sup>2</sup>）</li>
+                    <li><i className="fa fa-angle-right"></i> E：柔软扩散导流层热风布（平方克重：25g/m<sup>2</sup>、35g/m<sup>2</sup>）</li>
+                    <li><i className="fa fa-angle-right"></i> F：高分子（SAP）(注：高分子默认在A~E材料中间，故省略)</li>
+                </ul>
                 <div className="sorting-filters">
                     <form className="form-inline">
                         <div className="form-group">
-                            <label>Sort by</label>
+                            <label>排序字段</label>
                             <select className="form-control" defaultValue="Price">
                                 <option value="Date">Date</option>
                                 <option value="Price">Price</option>
@@ -17,14 +130,14 @@ var Index = React.createClass({
                             </select>
                         </div>
                         <div className="form-group">
-                            <label>Order</label>
+                            <label>排序方式</label>
                             <select className="form-control" defaultValue="Acs">
                                 <option value="Acs">Acs</option>
                                 <option value="Desc">Desc</option>
                             </select>
                         </div>
                         <div className="form-group">
-                            <label>Price $ (min/max)</label>
+                            <label>价格 $ (min/max)</label>
                             <div className="row grid-space-10">
                                 <div className="col-sm-6">
                                     <input type="text" className="form-control"/>
@@ -35,7 +148,7 @@ var Index = React.createClass({
                             </div>
                         </div>
                         <div className="form-group">
-                            <label>Category</label>
+                            <label>种类</label>
                             <select className="form-control" defaultValue="Desktops">
                                 <option value="Smartphones">Smartphones</option>
                                 <option value="Tablets">Tablets</option>
@@ -51,168 +164,42 @@ var Index = React.createClass({
                     </form>
                 </div>
                 <div className="masonry-grid-fitrows row grid-space-20">
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-1.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Adipisicing 7.7" Tempora 4.2</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$199.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
+                    {
+                        this.props.products.map(function (data, index) {
+                            var spec = [];
+                            for (var i in data.detail) {
+                                var item = data.detail[i];
+                                if (item.max) {
+                                    spec.push(<li key={i}><i className="icon-check"></i> {i}：{item.min}g/m<sup>2</sup> ~ {item.max}g/m<sup>2</sup></li>);
+                                    continue;
+                                }
+                                spec.push(<li key={i}><i className="icon-check"></i> {i}：{item}</li>);
+                            }
+                            return <div key={index} className="col-md-4 col-sm-6 masonry-grid-item">
+                                <div className="listing-item">
+                                    <div className="overlay-container">
+                                        <img src={data.img} alt=""/>
+                                        <a href="shop-product.html" className="overlay small">
+                                            <i className="fa fa-plus"></i>
+                                            <span>查看更多</span>
+                                        </a>
+                                        <span className="badge default-bg">MD-{index + 1}</span>
+                                    </div>
+                                    <div className="listing-item-body clearfix">
+                                        <h3 className="title text-center"><a href="shop-product.html">{data.structure}</a></h3>
+                                        <ul className="list-icons">
+                                            {spec}
+                                        </ul>
+                                        <span className="price">价格面议</span>
+                                        <div className="elements-list pull-right">
+                                            <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
+                                            <a href="#"><i className="fa fa-shopping-cart pr-10"></i>添加到购物车</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-2.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Consectetur 5.5" Vitae</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$99.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-3.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Rempora 15.4" 4GB illo</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$169.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-4.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                                <span className="badge default-bg">Sale -33%</span>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Dolor 4.4 Smartphone</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div><del>$149.00</del></div>
-                                <span className="price">$99.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-5.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Elit Wired Sdipisicing Debi</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$299.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-6.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                                <span className="badge dark-bg">Out of Stock</span>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Vitae Handset Debitis</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$399.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-7.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Impacewt Dolor Screen</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$199.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 masonry-grid-item">
-                        <div className="listing-item">
-                            <div className="overlay-container">
-                                <img src="dist/images/product-8.png" alt=""/>
-                                <a href="shop-product.html" className="overlay small">
-                                    <i className="fa fa-plus"></i>
-                                    <span>View Details</span>
-                                </a>
-                            </div>
-                            <div className="listing-item-body clearfix">
-                                <h3 className="title"><a href="shop-product.html">Amet Ufficiis Screen</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis.</p>
-                                <span className="price">$99.00</span>
-                                <div className="elements-list pull-right">
-                                    <a href="#" className="wishlist" title="wishlist"><i className="fa fa-heart-o"></i></a>
-                                    <a href="#"><i className="fa fa-shopping-cart pr-10"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            </div>;
+                        })
+                    }
                 </div>
                 <div className="clearfix"></div>
 

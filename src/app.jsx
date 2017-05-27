@@ -61,17 +61,8 @@ var App = React.createClass({
     setCache: function (obj) {
         this.state.cache[Object.keys(obj)[0]] = obj[Object.keys(obj)[0]];
     },
-    getHashInfo: function () {
-        var url = location.hash.split('?')[0].substring(1);
-        var params = location.hash.split('?')[1] ? location.hash.split('?')[1].split('&') : null;
-        var data = {};
-        for (var i in params) {
-            data[params[i].split('=')[0]] = params[i].split('=')[1];
-        }
-        return {data: data, url: url};
-    },
     initContent: function () {
-        var {url, data} = this.getHashInfo();
+        var {url, data} = helpers.getHashInfo();
         var pages = this.props.pages;
         var flag = true;
         for (var i in pages) {

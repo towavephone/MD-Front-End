@@ -1,6 +1,42 @@
 var React = require('react');
 var Index = React.createClass({
+    getDefaultProps: function () {
+        return {
+            colors: {
+                'red': '#e84c3d',
+                'blue': '#3d78d8',
+                'green': '#0d8609',
+                'orange': '#ffa500',
+                'pink': '#db7093',
+                'purple': '#954db3',
+                'yellow': '#d3b61c',
+                'brown': '#7a5230'
+            }
+        };
+    },
+    getInitialState: function () {
+        return {color: 'red'};
+    },
+    componentDidMount: function () {
+        var color = localStorage.getItem('color');
+        this.changeColor(color ? color : 'red');
+    },
+    changeColor: function (color) {
+        if ($('#color').length > 0 && this.isMounted()) {
+            $('#color')[0].href = 'dist/css/skins/' + color + '.css';
+            console.log('aaaaaaaa');
+            this.setState({activeColor: color});
+            localStorage.setItem('color', color);
+        }
+        return false;
+    },
     render: function () {
+        var colors = [];
+        for (var i in this.props.colors) {
+            var item = this.props.colors[i];
+            var isChecked = this.state.activeColor == i ? <i className="fa fa-check"></i> : null;
+            colors.push(<li className="twitter" key={i}><a href="javascript:void(0)" onClick={this.changeColor.bind(this, i)} style={{backgroundColor: item, width: '25px', height: '25px', borderRadius: '50px'}}>{isChecked}</a></li>);
+        }
         return (
 			<div className="header-top">
 				<div className="container">
@@ -8,27 +44,13 @@ var Index = React.createClass({
 						<div className="col-xs-3 col-sm-6">
 							<div className="header-top-first clearfix">
 								<ul className="social-links clearfix hidden-xs">
-									<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
-									<li className="skype"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-skype"></i></a></li>
-									<li className="linkedin"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-linkedin"></i></a></li>
-									<li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-google-plus"></i></a></li>
-									<li className="youtube"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-youtube-play"></i></a></li>
-									<li className="flickr"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-flickr"></i></a></li>
-									<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
-									<li className="pinterest"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-pinterest"></i></a></li>
+									{colors}
 								</ul>
 								<div className="social-links hidden-lg hidden-md hidden-sm">
 									<div className="btn-group dropdown">
 										<button type="button" className="btn dropdown-toggle" data-toggle="dropdown"><i className="fa fa-share-alt"></i></button>
 										<ul className="dropdown-menu dropdown-animation">
-											<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
-											<li className="skype"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-skype"></i></a></li>
-											<li className="linkedin"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-linkedin"></i></a></li>
-											<li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-google-plus"></i></a></li>
-											<li className="youtube"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-youtube-play"></i></a></li>
-											<li className="flickr"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-flickr"></i></a></li>
-											<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
-											<li className="pinterest"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-pinterest"></i></a></li>
+											{colors}
 										</ul>
 									</div>
 								</div>

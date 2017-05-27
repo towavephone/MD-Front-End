@@ -124,7 +124,7 @@ var Index = React.createClass({
 											<div className="panel-heading">
 												<h4 className="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" className="collapsed">
-														<i className="icon-list"></i>智芯时代 &bull; 先行一步
+														<i className="icon-list"></i>智芯时代 &bull; 开创先驱
 													</a>
 												</h4>
 											</div>

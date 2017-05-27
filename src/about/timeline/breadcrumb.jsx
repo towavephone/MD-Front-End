@@ -8,7 +8,7 @@ var Index = React.createClass({
 						<div className="col-md-12">
 							<ol className="breadcrumb">
 								<li><i className="fa fa-home pr-10"></i><a href="#app/index">首页</a></li>
-								<li className="active">产品展示</li>
+								<li className="active">发展历程</li>
 							</ol>
 						</div>
 					</div>
