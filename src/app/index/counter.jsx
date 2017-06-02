@@ -9,7 +9,7 @@ var Index = React.createClass({
 							<div className="box-style-1">
 								<h2 className="title">年产量（吨）</h2>
 								<i className="fa fa-bar-chart"></i>
-								<span className="stat-num" data-to="10000" data-speed="3000">0</span>
+								<span className="stat-num" data-to="100000" data-speed="3000">0</span>
 							</div>
 						</div>
 						<div className="col-md-3 col-sm-6">
