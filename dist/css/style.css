@@ -4378,8 +4378,8 @@ footer:not(.light) .footer-content .tag a,
 }
 .social-links .dropdown-menu {
 	z-index: 103;
-	padding: 0px;
-	min-width: 290px;
+	padding-bottom: 8px;
+	min-width: 305px;
 	margin-top: 1px;
 	font-size: 0;
 	box-shadow: none;
