@@ -137,7 +137,7 @@ var Index = React.createClass({
                                 this.props.timeline.map(function (data, index) {
                                     var events = data.events.map(function (data2, index2) {
                                         var isRight = index2 % 2 ? 'pull-right' : 'pull-left';
-                                        return <div className={'timeline-item object-non-visible ' + isRight} data-animation-effect="fadeInUpSmall" data-effect-delay="200">
+                                        return <div key={index2} className={'timeline-item object-non-visible ' + isRight} data-animation-effect="fadeInUpSmall" data-effect-delay="200">
                                             <article className="clearfix blogpost">
                                                 <div className="overlay-container">
                                                     <img src={data2.img} alt=""/>
@@ -173,7 +173,7 @@ var Index = React.createClass({
                                             </article>
                                         </div>;
                                     });
-                                    return <div>
+                                    return <div key={index}>
                                         <div className="timeline-date-label clearfix" style={{paddingTop: '60px'}}>{data.deadline}</div>
                                         {events}
                                     </div>;
