@@ -6,7 +6,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>广东美登官网</title>
-		<meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="广东美登官网" />
 		<meta name="keywords" content="广东美登,美登,meideng,gdmd,美登纸业" />
@@ -14,7 +13,7 @@
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="dist/images/美登logo.gif">
+		<link rel="shortcut icon" href="dist/images/美登logo.png">
 		<!-- Web Fonts -->
 		<!-- Bootstrap core CSS -->
 		<link href="dist/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -45,74 +44,37 @@
 		================================================== -->
 		<!-- Jquery and Bootstap core js files -->
 		<script type="text/javascript" src="dist/plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="dist/bootstrap/js/bootstrap.min.js"></script>
-
 		<!-- Modernizr javascript -->
 		<script type="text/javascript" src="dist/plugins/modernizr.js"></script>
-
+		<script async type="text/javascript" src="dist/bootstrap/js/bootstrap.min.js"></script>
 		<!-- jQuery REVOLUTION Slider  -->
-		<script type="text/javascript" src="dist/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="dist/plugins/rs-plugin/js/jquery.themepunch.revolution.js"></script>
+		<script async type="text/javascript" src="dist/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script async type="text/javascript" src="dist/plugins/rs-plugin/js/jquery.themepunch.revolution.js"></script>
 
 		<!-- Isotope javascript -->
-		<script type="text/javascript" src="dist/plugins/isotope/isotope.pkgd.min.js"></script>
+		<script async type="text/javascript" src="dist/plugins/isotope/isotope.pkgd.min.js"></script>
 
 		<!-- Owl carousel javascript -->
-		<script type="text/javascript" src="dist/plugins/owl-carousel/owl.carousel.js"></script>
+		<script async type="text/javascript" src="dist/plugins/owl-carousel/owl.carousel.js"></script>
 
 		<!-- Magnific Popup javascript -->
-		<script type="text/javascript" src="dist/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script async type="text/javascript" src="dist/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 		<!-- Appear javascript -->
-		<script type="text/javascript" src="dist/plugins/jquery.appear.js"></script>
+		<script async type="text/javascript" src="dist/plugins/jquery.appear.js"></script>
 
 		<!-- Count To javascript -->
-		<script type="text/javascript" src="dist/plugins/jquery.countTo.js"></script>
+		<script async type="text/javascript" src="dist/plugins/jquery.countTo.js"></script>
 
 		<!-- Parallax javascript -->
-		<script src="dist/plugins/jquery.parallax-1.1.3.js"></script>
+		<script async src="dist/plugins/jquery.parallax-1.1.3.js"></script>
 
 		<!-- Contact form -->
-		<script src="dist/plugins/jquery.validate.js"></script>
+		<script async src="dist/plugins/jquery.validate.js"></script>
 
 		<!-- Custom Scripts -->
-		<script type="text/javascript" src="dist/js/custom.js"></script>
+		<script async type="text/javascript" src="dist/js/custom.js"></script>
 		<script async src="dist/js/google_translate.js"></script>
 		<script async src="dist/js/config.prod.js"></script>
-		<script type="text/javascript">
-			function googleTranslateElementInit(){
-				new google.translate.TranslateElement({pageLanguage: 'zh-CN', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,multilanguagePage: true, gaTrack: true, gaId: 'UA-98114394-1'}, 'google_translate_element');
-			};
-			function init() {
-				var map = new BMap.Map("map");            // 创建Map实例
-				// 23.2543310000,113.0110250000
-				var point = new BMap.Point(113.0110250000,23.2543310000); // 创建点坐标
-				map.centerAndZoom(point,10);                 
-				// map.enableScrollWheelZoom();                 //启用滚轮放大缩小
-				var mapType1 = new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_HYBRID_MAP]});
-				var mapType2 = new BMap.MapTypeControl({anchor: BMAP_ANCHOR_TOP_LEFT});
-				var overView = new BMap.OverviewMapControl();
-				var overViewOpen = new BMap.OverviewMapControl({isOpen:true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT});
-				map.addControl(mapType1);          //2D图，卫星图
-				map.addControl(mapType2);          //左上角，默认地图控件
-				map.setCurrentCity("三水");        //由于有3D图，需要设置城市哦
-				map.addControl(overView);          //添加默认缩略地图控件
-				map.addControl(overViewOpen);      //右下角，打开
-				var myIcon = new BMap.Icon("dist/images/loc.png", new BMap.Size(144,80));
-				var marker = new BMap.Marker(point, {icon: myIcon});  // 创建标注
-				map.addOverlay(marker);               // 将标注添加到地图中
-				marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-				// 添加带有定位的导航控件
-				var navigationControl = new BMap.NavigationControl({
-					// 靠左上角位置
-					anchor: BMAP_ANCHOR_BOTTOM_LEFT,
-					// LARGE类型
-					type: BMAP_NAVIGATION_CONTROL_LARGE,
-					// 启用显示定位
-					// enableGeolocation: true
-				});
-				map.addControl(navigationControl);
-			}  
-		</script>
 	</body>
 </html>

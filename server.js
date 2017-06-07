@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-
 app.use('/build', express.static('build'));
 app.use('/dist', express.static('dist'));
 app.use('/cpts', express.static('cpts'));

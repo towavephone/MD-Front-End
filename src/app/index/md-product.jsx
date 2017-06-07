@@ -18,10 +18,10 @@ var Index = React.createClass({
 								</ul>
 							</div>
 							<div className="isotope-container row grid-space-20">
-								<div className="col-sm-6 col-md-4 isotope-item web-design">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item web-design">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-1.jpg" alt=""/>
+											<img src="../../dist/images/MD-1.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>
@@ -32,10 +32,10 @@ var Index = React.createClass({
 										<a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">Project Title</a>
 									</div>
 								</div>
-								<div className="col-sm-6 col-md-4 isotope-item app-development">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item app-development">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-2.jpg" alt=""/>
+											<img src="../../dist/images/MD-2.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>
@@ -46,10 +46,10 @@ var Index = React.createClass({
 										<a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">Project Title</a>
 									</div>
 								</div>
-								<div className="col-sm-6 col-md-4 isotope-item web-design">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item web-design">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-3.jpg" alt=""/>
+											<img src="../../dist/images/MD-2.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>
@@ -60,10 +60,10 @@ var Index = React.createClass({
 										<a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">Project Title</a>
 									</div>
 								</div>
-								<div className="col-sm-6 col-md-4 isotope-item site-building">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item site-building">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-4.jpg" alt=""/>
+											<img src="../../dist/images/MD-2.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>
@@ -74,10 +74,10 @@ var Index = React.createClass({
 										<a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">Project Title</a>
 									</div>
 								</div>
-								<div className="col-sm-6 col-md-4 isotope-item app-development">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item app-development">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-5.jpg" alt=""/>
+											<img src="../../dist/images/MD-2.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>
@@ -88,10 +88,10 @@ var Index = React.createClass({
 										<a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">Project Title</a>
 									</div>
 								</div>
-								<div className="col-sm-6 col-md-4 isotope-item web-design">
+								<div className="col-xs-12 col-sm-4 col-md-3 isotope-item web-design">
 									<div className="image-box">
 										<div className="overlay-container">
-											<img src="../../dist/images/portfolio-6.jpg" alt=""/>
+											<img src="../../dist/images/MD-1.jpg" alt="" width="100%"/>
 											<div className="overlay">
 												<div className="overlay-links">
 													<a href="portfolio-item.html"><i className="fa fa-link"></i></a>

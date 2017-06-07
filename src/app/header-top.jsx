@@ -24,7 +24,6 @@ var Index = React.createClass({
     changeColor: function (color) {
         if ($('#color').length > 0 && this.isMounted()) {
             $('#color')[0].href = 'dist/css/skins/' + color + '.css';
-            console.log('aaaaaaaa');
             this.setState({activeColor: color});
             localStorage.setItem('color', color);
         }

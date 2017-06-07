@@ -15,11 +15,11 @@
   "homepage": "https://github.com/towavephone/MD-Front-End#readme",
   "scripts": {
     "webpack_dev": "./node_modules/.bin/webpack -w",
-    "webpack_prod": "./node_modules/.bin/webpack -w --config webpack.prod.config.js",
+    "webpack_prod": "./node_modules/.bin/webpack -p -w --config webpack.prod.config.js",
     "serve_dev": "./node_modules/.bin/node server.js",
     "serve_prod": "./node_modules/.bin/node server.prod.js",
     "dev": "npm run serve_dev | npm run webpack_dev",
-    "prod": "npm run serve_prod | npm run webpack_prod",
+    "prod": "npm run webpack_prod",
     "eslint": "./node_modules/.bin/eslint --ext .js,.jsx src/** --fix"
   },
   "devDependencies": {
@@ -36,7 +36,6 @@
     "babel-preset-stage-3": "^6.17.0",
     "babel-register": "^6.18.0",
     "bootstrap-growl-ifightcrime": "^1.1.0",
-    "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.23.0",
     "eslint": "^3.0.1",
     "eslint-loader": "^1.4.1",

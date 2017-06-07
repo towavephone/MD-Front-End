@@ -89,7 +89,7 @@ var Index = React.createClass({
 						<div className="col-md-2">
 							<div className="header-left clearfix">
 								<div className="logo">
-									<a href="#app/index"><img id="logo" src="../dist/images/美登logo.gif" alt="iDea"/></a>
+									<a href="#app/index"><img id="logo" src="../dist/images/美登logo.png" alt="iDea"/></a>
 								</div>
 								<div className="site-slogan">
 									广东美登纸业有限公司

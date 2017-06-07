@@ -5,102 +5,102 @@ var Index = React.createClass({
             products: [
                 {
                     structure: 'A + B',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + C',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + A',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'C + C',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + E',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'C + E',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'D + E',
-                    img: '../../dist/images/MD-1.png',
+                    img: '../../dist/images/MD-1.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + A',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + C',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + D',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'C + B + D',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + E',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'D + B + E',
-                    img: '../../dist/images/MD-2.png',
+                    img: '../../dist/images/MD-2.jpg',
                     detail: {'高分子含量': {min: 50, max: 360}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + B + A',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 50, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + B + C',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + B + B',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + B + E',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + E + E',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + E + C',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 },
                 {
                     structure: 'A + B + E + D',
-                    img: '../../dist/images/MD-3.png',
+                    img: '../../dist/images/MD-3.jpg',
                     detail: {'高分子含量': {min: 20, max: 180}, '平方克重': {min: 42, max: 300}, '用途': '纸尿裤或拉拉裤'}
                 }
             ]
@@ -175,10 +175,10 @@ var Index = React.createClass({
                                 }
                                 spec.push(<li key={i}><i className="icon-check"></i> {i}：{item}</li>);
                             }
-                            return <div key={index} className="col-md-4 col-sm-6 masonry-grid-item">
+                            return <div key={index} className="col-xs-12 col-sm-6 col-md-4 masonry-grid-item">
                                 <div className="listing-item">
                                     <div className="overlay-container">
-                                        <img src={data.img} alt=""/>
+                                        <img src={data.img} alt="" style={{width: '100%'}}/>
                                         <a href="shop-product.html" className="overlay small">
                                             <i className="fa fa-plus"></i>
                                             <span>查看更多</span>
