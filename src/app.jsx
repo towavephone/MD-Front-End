@@ -6,7 +6,6 @@ var Footer = require('./app/footer');
 var SubFooter = require('./app/sub-footer');
 var helpers = require('./toolers/helpers');
 var template = require('./toolers/template');
-var NotFound = require('./app/not-found');
 var App = React.createClass({
     getDefaultProps: function () {
         return {pages: ['app', 'product', 'about', 'contact']};
@@ -62,6 +61,9 @@ var App = React.createClass({
         this.state.cache[Object.keys(obj)[0]] = obj[Object.keys(obj)[0]];
     },
     initContent: function () {
+        if (location.hash === '' && (location.pathname === '/' || location.pathname === '/index.html')) {
+            location.href = '#app/index';
+        }
         var {url, data} = helpers.getHashInfo();
         var pages = this.props.pages;
         var flag = true;
@@ -78,13 +80,15 @@ var App = React.createClass({
             }
         }
         if (flag) {
-            this.setState({content: null}, function () {
+            require.ensure([], function (require) {
+                var content = require('./app/not-found');
                 this.alert('访问的网址不存在');
+                this.setState({content: content, data: data, url: url});
             }.bind(this));
         }
     },
     render: function () {
-        var content = <NotFound/>;
+        var content = null;
         if (this.state.content) {
             content = <div><this.state.content {...this.state.data}
                     jump={this.jump}
