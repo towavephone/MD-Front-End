@@ -129,8 +129,8 @@ var Index = React.createClass({
                                 <li><strong></strong></li>
                                 <li><i className="fa fa-home pr-10"></i>地址：中国广东佛山市三水区<br/>乐平工业区齐力大道南9号</li>
                                 <li><i className="fa fa-phone pr-10"></i><a href="tel:0757-87388816">电话：0757-87388816</a></li>
-                                <li><i className="fa fa-mobile pr-10 pl-5"></i><a href="tel:(123) 456-7890">手机： (123) 456-7890</a></li>
-                                <li><i className="fa fa-qq pr-10"></i><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=651207923&website=www.oicqzone.com">QQ：0757-87388816</a></li>
+                                <li><i className="fa fa-mobile pr-10 pl-5"></i><a href="tel:13923287557">手机： 13923287557</a></li>
+                                <li><i className="fa fa-qq pr-10"></i><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=651207923&website=www.oicqzone.com">QQ：651207923</a></li>
                                 <li><i className="fa fa-envelope pr-10"></i>邮箱：ty27149@163.com</li>
                                 <li><i className="fa fa-fax pr-10"></i>传真：0757-87388816</li>
                             </ul>

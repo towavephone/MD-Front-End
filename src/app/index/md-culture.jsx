@@ -12,7 +12,7 @@ var Index = React.createClass({
 							<br/>
 							<div className="row">
 								<div className="col-md-6">
-									<h2 className="title">美登 - 做最受国际尊敬企业</h2>
+									<h2 className="title">美登 - 做最受人尊敬企业</h2>
 									<div className="row">
 										<div className="col-md-6">
 											<img src="../../dist/images/美登招牌.jpg" alt=""/>
