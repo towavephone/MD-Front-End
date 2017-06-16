@@ -159,11 +159,13 @@ var Index = React.createClass({
     },
     render: function () {
         var number = {};
+        var sum = 0;
         for (var i in this.state.number) {
             var item = this.state.number[i];
             number[item.typeId] = item.count;
+            sum += parseInt(item.count);
         }
-        var tablist = [{type: '所有', num: number[null], id: 0}];
+        var tablist = [{type: '所有', num: sum, id: 0}];
         for (i in this.state.types) {
             item = this.state.types[i];
             if (number[item.value] === undefined) {
