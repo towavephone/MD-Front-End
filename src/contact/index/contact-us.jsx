@@ -1,6 +1,8 @@
 var React = require('react');
 var xhr = require('../../toolers/xhr');
 var helpers = require('../../toolers/helpers');
+var Select = require('react-select');
+import 'react-select/dist/react-select.css';
 var validator = helpers.validator;
 var Input = React.createClass({
     render: function () {
@@ -10,14 +12,18 @@ var Input = React.createClass({
             </div>;
         }
         if (this.props.error === undefined || this.props.error.length === 0) {
+            if (this.props.onlyShowMessage) {
+                return <div className="form-group">
+                    {this.props.children}
+                </div>;
+            }
             return <div className="form-group has-success has-feedback">
                 {this.props.children}
-                <span className="glyphicon glyphicon-ok form-control-feedback"></span>
             </div>;
         }
         return <div className="form-group has-error has-feedback">
             {this.props.children}
-            <span className="glyphicon glyphicon-remove form-control-feedback"></span>
+            {this.props.onlyShowMessage ? null : <span className="glyphicon glyphicon-remove form-control-feedback"></span>}
             {
                 this.props.error.map(function (data, index) {
                     return <span key={index} id="helpBlock" className="help-block">{data}</span>;
@@ -33,7 +39,11 @@ var Index = React.createClass({
             email: '',
             subject: '',
             message: '',
-            errors: {name: null, email: null, subject: null, message: null}
+            errors: {name: null, email: null, subject: null, message: null},
+            typeId: '',
+            types: [],
+            msg: [],
+            number: []
         };
     },
     getDefaultProps: function () {
@@ -41,6 +51,10 @@ var Index = React.createClass({
     },
     componentDidMount: function () {
         validator.config = {
+            typeId: {
+                types: ['isNonEmpty'],
+                name: '类别'
+            },
             name: {
                 types: ['isRightLength'],
                 params: {isRightLength: {min: 2, max: 20}},
@@ -61,6 +75,9 @@ var Index = React.createClass({
                 name: '留言'
             }
         };
+        this.getSelectData();
+        this.switchType(this.props.id);
+        this.getNumber();
     },
     setValue: function (e) {
         var data = helpers.setValue(e);
@@ -73,8 +90,12 @@ var Index = React.createClass({
         data.errors = this.state.errors;
         this.setState(data);
     },
+    onChange: function (a, b, c) {
+        var data = helpers.onChange(a, b, c);
+        this.setState(data);
+    },
     submit: function () {
-        var params = helpers.getParams(this.state, ['errors', 'isDisabled']);
+        var params = helpers.getParams(this.state, ['errors', 'types']);
         console.log(params);
         validator.validate(params);
         this.setState({errors: validator.messages});
@@ -83,7 +104,20 @@ var Index = React.createClass({
             helpers.alert('请按要求填写相关内容');
             return;
         }
+        // if (validator.hasErrors()) {
+        //     helpers.alert('请按要求填写相关内容');
+        //     return;
+        // }
         this.postData(params);
+    },
+    getSelectData: async function () {
+        var ret = await xhr.get('/msg/type', null);
+        console.log(ret);
+        if (ret.result === false) {
+            helpers.alert(ret[1].error_msg);
+            return;
+        }
+        this.setState({types: ret.data});
     },
     postData: async function (params) {
         var ret = await xhr.post('/msg/add', params);
@@ -93,12 +127,53 @@ var Index = React.createClass({
             helpers.alert(ret.error_msg);
             return;
         }
-        helpers.alert('插入成功');
+        helpers.alert('评论成功，感谢你的建议！');
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            errors: {name: null, email: null, subject: null, message: null}
+        });
+        this.getSelectData();
+        this.switchType(this.props.id);
+        this.getNumber();
+    },
+    getNumber: async function () {
+        var ret = await xhr.get('/msg/number', null);
+        console.log(ret);
+        if (ret.result === false) {
+            helpers.alert(ret.error_msg);
+            return;
+        }
+        this.setState({number: ret.data});
+    },
+    switchType: async function (id) {
+        var ret = await xhr.get('/msg', {id: id == 0 || id === undefined ? '' : id});
+        console.log(ret);
+        if (ret.result === false) {
+            helpers.alert(ret.error_msg);
+            return;
+        }
+        this.setState({msg: ret.data});
     },
     render: function () {
+        var number = {};
+        for (var i in this.state.number) {
+            var item = this.state.number[i];
+            number[item.typeId] = item.count;
+        }
+        var tablist = [{type: '所有', num: number[null], id: 0}];
+        for (i in this.state.types) {
+            item = this.state.types[i];
+            if (number[item.value] === undefined) {
+                continue;
+            }
+            tablist.push({type: item.label, num: number[item.value], id: item.value});
+        }
         return (
             <div>
-                <div className="main col-md-8">
+                <div className="main col-md-3">
                     <h1 className="page-title">留言</h1>
                     <p>请留下你们的宝贵意见或建议</p>
                     <div className="contact-form">
@@ -109,6 +184,10 @@ var Index = React.createClass({
                         <Input error={this.state.errors.email}>
                             <label htmlFor="email" className="control-label">邮箱</label>
                             <input type="text" className="form-control input-lg" id="email" value={this.state.email} placeholder="请输入你的邮箱" onChange={this.setValue}/>
+                        </Input>
+                        <Input error={this.state.errors.typeId} onlyShowMessage={true}>
+                            <label htmlFor="subject" className="control-label">类别</label>
+                            <Select value={this.state.typeId} placeholder="请选择..." options={this.state.types} onChange={this.onChange.bind(this, 'typeId')}/>
                         </Input>
                         <Input error={this.state.errors.subject}>
                             <label htmlFor="subject" className="control-label">主题</label>
@@ -121,27 +200,45 @@ var Index = React.createClass({
                         <button className="btn btn-default" onClick={this.submit}>发送</button>
                     </div>
                 </div>
-                <aside className="col-md-4">
-                    <div className="sidebar">
-                        <div className="side vertical-divider-left">
-                            <h3 className="title">联系我们</h3>
-                            <ul className="list">
-                                <li><strong></strong></li>
-                                <li><i className="fa fa-home pr-10"></i>地址：中国广东佛山市三水区<br/>乐平工业区齐力大道南9号</li>
-                                <li><i className="fa fa-phone pr-10"></i><a href="tel:0757-87388816">电话：0757-87388816</a></li>
-                                <li><i className="fa fa-mobile pr-10 pl-5"></i><a href="tel:13923287557">手机： 13923287557</a></li>
-                                <li><i className="fa fa-qq pr-10"></i><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=651207923&website=www.oicqzone.com">QQ：651207923</a></li>
-                                <li><i className="fa fa-envelope pr-10"></i>邮箱：ty27149@163.com</li>
-                                <li><i className="fa fa-fax pr-10"></i>传真：0757-87388816</li>
-                            </ul>
-                            <ul className="social-links colored circle large">
-                                <li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-qq"></i></a></li>
-                                <li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-tencent-weibo"></i></a></li>
-                                <li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-weixin"></i></a></li>
-                            </ul>
+                <div className="main col-md-9">
+                    <h1 className="page-title">热门留言</h1>
+                    <p>感谢留下宝贵意见的所有人！</p>
+                    <div className="tabs-style-2">
+                        <ul className="nav nav-tabs" role="tablist">
+                            {
+                                tablist.map(function (data, index) {
+                                    return <li key={index} className={this.props.id == data.id ? 'active' : ''}><a href={'index.html#contact/index?id=' + data.id} onClick={this.switchType.bind(this, data.id)}><i className="fa fa-user pr-10"></i>{data.type}({data.num})</a></li>;
+                                }.bind(this))
+                            }
+                        </ul>
+                        <div className="tab-content">
+                            <div className="tab-pane fade in active">
+                                <div className="panel-group">
+                                    {
+                                        this.state.msg.map(function (data, index) {
+                                            return <div key={data.typeId + ':' + index} className="panel panel-default">
+                                                <div className="panel-heading">
+                                                    <h4 className="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-faq" href={'#collapse' + index} className="collapsed">
+                                                            <i className="fa fa-question-circle pr-10"></i> {data.subject}
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id={'collapse' + index} className="panel-collapse collapse">
+                                                    <div className="panel-body">
+                                                        {data.message}
+                                                        <div className="testimonial-info-1">姓名：{data.name}</div>
+                                                        <div className="testimonial-info-2">邮箱: {data.email}</div>
+                                                    </div>
+                                                </div>
+                                            </div>;
+                                        })
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </aside>
+                </div>
             </div>
         );
     }

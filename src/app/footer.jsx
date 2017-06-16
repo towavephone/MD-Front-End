@@ -9,19 +9,31 @@ var Index = React.createClass({
 							<div className="col-md-6">
 								<div className="footer-content">
 									<div className="logo-footer"><img id="logo-footer" src="../dist/images/美登大logo.png" alt="" width="200"/></div>
-									<p>以智慧、品质、志气为一体</p>
-									<p>集天时、地利、人和的趋势</p>
-									<p>创高端、精品、领袖的品牌</p>
-									<ul className="social-links colored circle">
-										<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
-										<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
-										<li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-google-plus"></i></a></li>
-										<li className="skype"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-skype"></i></a></li>
-										<li className="linkedin"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-linkedin"></i></a></li>
-										<li className="youtube"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-youtube-play"></i></a></li>
-										<li className="flickr"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-flickr"></i></a></li>
-										<li className="pinterest"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-pinterest"></i></a></li>
-									</ul>
+									<div className="row">
+										<div className="col-sm-6">
+											<p>以智慧、品质、志气为一体</p>
+											<p>集天时、地利、人和的趋势</p>
+											<p>创高端、精品、领袖的品牌</p>
+											<div className="space-bottom hidden-lg hidden-xs"></div>
+											<ul className="social-links circle">
+												<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
+												<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
+												<li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-google-plus"></i></a></li>
+												<li className="skype"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-skype"></i></a></li>
+												<li className="linkedin"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+										<div className="col-sm-6">
+											<ul className="list-icons">
+												<li><i className="fa fa-home pr-10"></i>地址：中国广东佛山市三水区<br/>乐平工业区齐力大道南9号</li>
+												<li><i className="fa fa-phone pr-10"></i><a href="tel:0757-87388816">电话：0757-87388816</a></li>
+												<li><i className="fa fa-mobile pr-10 pl-5"></i><a href="tel:13923287557">手机：13923287557</a></li>
+												<li><i className="fa fa-qq pr-10"></i><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=651207923&website=www.oicqzone.com">QQ：651207923</a></li>
+												<li><i className="fa fa-envelope pr-10"></i>邮箱：ty27149@163.com</li>
+												<li><i className="fa fa-fax pr-10"></i>传真：0757-87388816</li>
+											</ul>
+										</div>
+									</div>
 									<a href="page-about.html" className="link"><span>Read More</span></a>
 								</div>
 							</div>

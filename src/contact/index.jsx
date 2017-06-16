@@ -19,7 +19,7 @@ var Index = React.createClass({
                 <section className="main-container">
                     <div className="container">
                         <div className="row">
-                            <ContactUs/>
+                            <ContactUs {...this.props}/>
                         </div>
                     </div>
                 </section>
