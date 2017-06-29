@@ -31,20 +31,16 @@ var Index = React.createClass({
                     name: '产品展示',
                     dropdown: [
                         {
-                            url: '#product/index?type=child',
-                            name: '婴儿纸尿裤专用'
+                            url: '#product/index?layer=3',
+                            name: '三层复合纸'
                         },
                         {
-                            url: '#product/index?type=adult',
-                            name: '成人纸尿裤专用'
+                            url: '#product/index?layer=3',
+                            name: '五层复合纸'
                         },
                         {
-                            url: '#product/index?type=women',
-                            name: '女性卫生用品'
-                        },
-                        {
-                            url: '#product/index?type=pet',
-                            name: '宠物纸尿裤专用'
+                            url: '#product/index?layer=3',
+                            name: '七层复合纸'
                         }
                     ]
                 },

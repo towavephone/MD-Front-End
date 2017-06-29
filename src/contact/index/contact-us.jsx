@@ -81,13 +81,14 @@ var Index = React.createClass({
     },
     setValue: function (e) {
         var data = helpers.setValue(e);
-        var id = e.target.id;
-        this.state[id] = e.target.value;
-        var params = helpers.getParams(this.state);
-        console.log(params);
-        validator.validate(params);
-        this.state.errors[id] = validator.messages[id];
-        data.errors = this.state.errors;
+        // 去掉输入时的校验功能，焦点的变化影响输入
+        // var id = e.target.id;
+        // this.state[id] = e.target.value;
+        // var params = helpers.getParams(this.state);
+        // console.log(params);
+        // validator.validate(params);
+        // this.state.errors[id] = validator.messages[id];
+        // data.errors = this.state.errors;
         this.setState(data);
     },
     onChange: function (a, b, c) {
