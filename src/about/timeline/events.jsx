@@ -140,7 +140,7 @@ var Index = React.createClass({
                                         return <div key={index2} className={'timeline-item object-non-visible ' + isRight} data-animation-effect="fadeInUpSmall" data-effect-delay="200">
                                             <article className="clearfix blogpost">
                                                 <div className="overlay-container">
-                                                    <img src={data2.img} alt=""/>
+                                                    <img src={data2.img} alt="" width="100%"/>
                                                     <div className="overlay">
                                                         <div className="overlay-links">
                                                             <a href="blog-post.html"><i className="fa fa-link"></i></a>
