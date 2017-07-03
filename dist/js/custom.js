@@ -40,3 +40,10 @@ function init() {
     });
     map.addControl(navigationControl);
 }  
+var _hmt = _hmt || []; 
+(function() { 
+var hm = document.createElement("script"); 
+hm.src = "//hm.baidu.com/hm.js?f80fd4df90476a926eae590912bea3bc"; 
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s); 
+})(); 
