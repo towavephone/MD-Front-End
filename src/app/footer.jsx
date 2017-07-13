@@ -30,7 +30,7 @@ var Index = React.createClass({
 												<li><i className="fa fa-mobile pr-10 pl-5"></i><a href="tel:13923287557">手机：13923287557</a></li>
 												<li><i className="fa fa-qq pr-10"></i><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=651207923&website=www.oicqzone.com">QQ：651207923</a></li>
 												<li><i className="fa fa-envelope pr-10"></i>邮箱：ty27149@163.com</li>
-												<li><i className="fa fa-fax pr-10"></i>传真：0757-87388816</li>
+												<li><i className="fa fa-fax pr-10"></i>传真：0757-87388811</li>
 											</ul>
 										</div>
 									</div>
