@@ -8,7 +8,7 @@ var helpers = require('./toolers/helpers');
 var template = require('./toolers/template');
 var App = React.createClass({
     getDefaultProps: function () {
-        return {pages: ['app', 'product', 'about', 'contact', 'news']};
+        return {pages: ['app', 'product', 'about', 'contact', 'news', 'link']};
     },
     getInitialState: function () {
         return {content: null};

@@ -31,22 +31,32 @@ var Index = React.createClass({
                     name: '产品展示',
                     dropdown: [
                         {
-                            url: '#product/index?layer=3',
+                            url: '#product/index?type=3',
                             name: '三层复合纸'
                         },
                         {
-                            url: '#product/index?layer=3',
+                            url: '#product/index?type=5',
                             name: '五层复合纸'
                         },
                         {
-                            url: '#product/index?layer=3',
+                            url: '#product/index?type=7',
                             name: '七层复合纸'
                         }
                     ]
                 },
                 {
                     url: '#news/index',
-                    name: '新闻中心'
+                    name: '新闻中心',
+                    dropdown: [
+                        {
+                            url: '#news/index?type=inside',
+                            name: '国内新闻'
+                        },
+                        {
+                            url: '#news/index?type=outside',
+                            name: '国外新闻'
+                        }
+                    ]
                 },
                 {
                     url: '#join/index',
@@ -72,7 +82,13 @@ var Index = React.createClass({
                 },
                 {
                     url: '#link/index',
-                    name: '相关链接'
+                    name: '相关链接',
+                    dropdown: [
+                        {
+                            url: '#link/index?type=webSiteMap',
+                            name: '网站地图'
+                        }
+                    ]
                 }
             ]
         };

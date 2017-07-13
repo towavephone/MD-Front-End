@@ -38,7 +38,7 @@ var Index = React.createClass({
 											</div>
 											<div className="col-md-6">
 												<p>2002年开始，美登人一直专注于吸收性芯材的开发与应用。坚持同样的事情重复做，日复一日、年复一年。坚毅、认真、耐心、细致、坚持每天学习一点，每天持续改善一点，积以时日，我们终将汇聚涓流。</p>
-												<a href="page-services.html" className="btn btn-default">Read more</a>
+												<a href="#join/index" className="btn btn-default">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -71,7 +71,7 @@ var Index = React.createClass({
 												<ul className="list-icons">
 													<li><i className="icon-check"></i> 持续改进，追求完美</li>
 												</ul>
-												<a href="page-services.html" className="btn btn-default">Read more</a>
+												<a href="#about/index" className="btn btn-default">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -97,7 +97,7 @@ var Index = React.createClass({
 												<ul className="list-icons">
 													<li><i className="icon-check"></i> 产品性能得到国内外高端纸尿裤大企业大品牌的高度认可</li>
 												</ul>
-												<a href="page-services.html" className="btn btn-default">Read more</a>
+												<a href="#product/index" className="btn btn-default">了解更多</a>
 											</div>
 										</div>
 									</div>

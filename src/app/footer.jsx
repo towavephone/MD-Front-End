@@ -16,8 +16,8 @@ var Index = React.createClass({
 											<p>创高端、精品、领袖的品牌</p>
 											<div className="space-bottom hidden-lg hidden-xs"></div>
 											<ul className="social-links circle">
-												<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-facebook"></i></a></li>
-												<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-twitter"></i></a></li>
+												<li className="facebook"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-weixin"></i></a></li>
+												<li className="twitter"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-qq"></i></a></li>
 												<li className="googleplus"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-google-plus"></i></a></li>
 												<li className="skype"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-skype"></i></a></li>
 												<li className="linkedin"><a target="_blank" href="http://www.cssmoban.com"><i className="fa fa-linkedin"></i></a></li>
@@ -34,7 +34,7 @@ var Index = React.createClass({
 											</ul>
 										</div>
 									</div>
-									<a href="page-about.html" className="link"><span>Read More</span></a>
+									<a href="#about/index" className="link"><span>了解更多</span></a>
 								</div>
 							</div>
 							<div className="col-sm-6 col-md-3 col-lg-2 col-lg-offset-1">
@@ -42,11 +42,13 @@ var Index = React.createClass({
 									<h2>链接</h2>
 									<nav>
 										<ul className="nav nav-pills nav-stacked">
-											<li><a href="index.html">首页</a></li>
-											<li><a href="blog-right-sidebar.html">关于我们</a></li>
-											<li><a href="portfolio-3col.html">产品展示</a></li>
-											<li><a href="page-about.html">招聘中心</a></li>
-											<li><a href="page-contact.html">联系我们</a></li>
+											<li><a href="#app/index">首页</a></li>
+											<li><a href="#about/index">关于美登</a></li>
+											<li><a href="#product/index">产品展示</a></li>
+											<li><a href="#news/index">新闻中心</a></li>
+											<li><a href="#join/index">加入美登</a></li>
+											<li><a href="#contact/index">联系我们</a></li>
+											<li><a href="#link/index">相关链接</a></li>
 										</ul>
 									</nav>
 								</div>

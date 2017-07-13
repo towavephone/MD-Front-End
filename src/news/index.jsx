@@ -26,7 +26,8 @@ var Index = React.createClass({
                         '2017年武汉生活用纸展虽遇到雨季的影响，但却抵挡不住大家参展的热情，本次展会吸引了近800家海内外企业参展，展会面积达8万平米，分为11个展区，共有千余种品牌进行集中展示。九江镇招商团队当天到场参观考察，与参展企业交流。',
                         '南海医卫用协会会员单位则在现场大放异彩，吸引了不少参展商围观。一起去看看当日盛况吧~',
                         '会员企业现场展示的各种创新成果让人大开眼界，其优质的产品受到各地商家青睐，现场火爆不断！'
-                    ]
+                    ],
+                    link: 'http://www.foshannews.net/jjzs/wszz/201704/t20170410_74757.html'
                 },
                 {
                     imgs: [{
@@ -45,7 +46,8 @@ var Index = React.createClass({
                         '黄进介绍了襄阳在国家“一带一路”中的位置、区位交通优势和襄州区的纺织产业基础，重点推介了纺织产业园的规划、基础设施建设、入驻企业等情况及襄州区正在大力推行的重资产招商模式。',
                         '李敬表示，随着公司的快速发展，迫切希望在中部建设生产基地，并拟定于3月上旬到襄州考察洽谈。黄进承诺，襄州区将根据公司投资要求，以优惠的政策、优质的服务，为项目落地建设提供良好保障。',
                         '广东美登纸业有限公司是全国规摸最大的以设计、生产、销售卫生复合纸、膨化复合纸、湿强纸、高分子纸等为一体的专业纸品生产厂家；是恒安、ABC等公司护理用品最大的上游配套供应商。（编辑：李顺民）'
-                    ]
+                    ],
+                    link: 'http://www.zgxy.gov.cn/html/201702/24/248061502.html'
                 },
                 {
                     imgs: [{
@@ -66,7 +68,8 @@ var Index = React.createClass({
                         '本次展览，共有700多家参展商，场馆面积达82500㎡，为历届最大，30000多海内外专业观众将参与其中，而南海区医卫用产业行业协会首次报团参展，12家企业军团“出战”！其中广东美登纸业也参加了此次展会。',
                         '25日当天，南海区医卫用行业协会在主展位（8F20展位），将会有“中国医卫用非织造产品示范基地”专场推介、设企业宣传和沟通交流平台，借助参展机会介绍九江镇经济发展情况及无纺布行业发展现状。',
                         '此次报团参展，将可以扩大南海区医卫用产品行业协会的影响力和知名度，促进协会会员企业的发展和壮大，为会员企业与国内外卫生用品企业搭建交流合作平台。'
-                    ]
+                    ],
+                    link: 'http://www.nhjjw.cn/index/03/201505/t20150522_5667749.html'
                 }
             ]
         };
@@ -88,22 +91,22 @@ var Index = React.createClass({
                                 <p className="lead">美登人身边的大事记</p>
                                     {
                                         this.props.news.map(function (data, index) {
-                                            var imgs = data.imgs.map(function (data, index) {
-                                                return <div key={index} className="image-box">
+                                            var imgs = data.imgs.map(function (data2, index2) {
+                                                return <div key={index2} className="image-box">
                                                     <div className="overlay-container">
-                                                        <img src={data.img} alt=""/>
+                                                        <img src={data2.img} alt=""/>
                                                         <div className="overlay">
                                                             <div className="overlay-links">
-                                                                <a href="portfolio-item.html"><i className="fa fa-link"></i></a>
-                                                                <a href={data.img} className="popup-img"><i className="fa fa-search-plus"></i></a>
+                                                                <a target="_blank" href={data.link}><i className="fa fa-link"></i></a>
+                                                                <a href={data2.img} className="popup-img"><i className="fa fa-search-plus"></i></a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="portfolio-item.html" className="btn btn-light-gray btn-block">{data.desc}</a>
+                                                    <a className="btn btn-light-gray btn-block" target="_blank" href={data.link}>{data2.desc}</a>
                                                 </div>;
                                             });
-                                            var content = data.content.map(function (data, index) {
-                                                return <p key={index}>{data}</p>;
+                                            var content = data.content.map(function (data3, index3) {
+                                                return <p key={index3}>{data3}</p>;
                                             });
                                             return <article key={index} className="clearfix blogpost object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
                                                 <div className="owl-carousel carousel-autoplay" style={{padding: '20px'}}>
@@ -116,8 +119,8 @@ var Index = React.createClass({
                                                     </div>
                                                     <div className="blogpost-content">
                                                         <header>
-                                                            <h2 className="title"><a href="blog-post.html">{data.title}</a></h2>
-                                                            <div className="submitted"><i className="fa fa-user pr-5"></i> by <a href="#">{data.submitted}</a></div>
+                                                            <h2 className="title"><a target="_blank" href={data.link}>{data.title}</a></h2>
+                                                            <div className="submitted"><i className="fa fa-user pr-5"></i> by <a target="_blank" href={data.link}>{data.submitted}</a></div>
                                                         </header>
                                                         {content}
                                                     </div>
@@ -127,7 +130,7 @@ var Index = React.createClass({
                                                         <li><i className="fa fa-comment-o pr-5"></i> <a href="#">22 comments</a> |</li>
                                                         <li><i className="fa fa-tags pr-5"></i> <a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">long tag 3</a> </li>
                                                     </ul>
-                                                    <a className="pull-right link" href="blog-post.html"><span>Read more</span></a>
+                                                    <a className="pull-right link" target="_blank" href={data.link}><span>Read more</span></a>
                                                 </footer>
                                             </article>;
                                         })
