@@ -21,14 +21,14 @@ var Index = React.createClass({
 											</div>
 											<div className="modal-body">
 												<h4 className="title">美登实力</h4>
-												<div className="separator-2"></div>
+												<div className="separator"></div>
 												<ul className="list-icons">
 													<li><i className="icon-check"></i> 研发、设计、生产、销售卫生复合纸、膨化复合纸、湿强纸及高分子</li>
 													<li><i className="icon-check"></i> 下设分公司佛山华亨卫生材料有限公司</li>
 													<li><i className="icon-check"></i> 占地35亩，厂房2万平方米，生产设备16条，生产能力10万吨/年</li>
 												</ul>
 												<h4 className="title">美登产品</h4>
-												<div className="separator-2"></div>
+												<div className="separator"></div>
 												<ul className="list-icons">
 													<li><i className="icon-check"></i> 纸尿裤超薄材料</li>
 													<li><i className="icon-check"></i> 卫生巾超薄吸水材料</li>

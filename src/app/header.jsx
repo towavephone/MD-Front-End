@@ -49,18 +49,24 @@ var Index = React.createClass({
                     name: '新闻中心',
                     dropdown: [
                         {
-                            url: '#news/index?type=inside',
-                            name: '国内新闻'
+                            url: '#news/index?type=company',
+                            name: '公司新闻'
                         },
                         {
-                            url: '#news/index?type=outside',
-                            name: '国外新闻'
+                            url: '#news/index?type=industry',
+                            name: '行业新闻'
                         }
                     ]
                 },
                 {
-                    url: '#join/index',
-                    name: '加入美登'
+                    url: '#join/staff',
+                    name: '加入美登',
+                    dropdown: [
+                        {
+                            url: '#join/staff',
+                            name: '员工风采'
+                        }
+                    ]
                 },
                 {
                     url: '#contact/index',

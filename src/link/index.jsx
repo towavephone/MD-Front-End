@@ -88,12 +88,21 @@ var Index = React.createClass({
                     title: '新闻中心',
                     content: [
                         {
-                            name: '国内新闻',
-                            link: '#news/index'
+                            name: '公司新闻',
+                            link: '#news/index?type=company'
                         },
                         {
-                            name: '国外新闻',
-                            link: '#news/index'
+                            name: '行业新闻',
+                            link: '#news/index?type=industry'
+                        }
+                    ]
+                },
+                {
+                    title: '加入美登',
+                    content: [
+                        {
+                            name: '员工风采',
+                            link: '#join/staff'
                         }
                     ]
                 },

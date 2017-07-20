@@ -617,11 +617,11 @@ var scrollToTop = function () {
 var Modal = function () {
     // Modal
     // -----------------------------------------------
-    if ($('.modal').length > 0) {
-        $('.modal').each(function () {
-            $('.modal').prependTo('body');
-        });
-    }
+    // if ($('.modal').length > 0) {
+    //     $('.modal').each(function () {
+    //         $('.modal').prependTo('body');
+    //     });
+    // }
 };
 var pricingTablesPopovers = function () {
     // Pricing tables popovers

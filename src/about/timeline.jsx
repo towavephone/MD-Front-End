@@ -1,6 +1,6 @@
 var React = require('react');
 var template = require('../toolers/template');
-var Breadcrumb = require('./timeline/breadcrumb');
+var Breadcrumb = require('./breadcrumb');
 var Welcome = require('./index/welcome');
 var Events = require('./timeline/events');
 var Index = React.createClass({

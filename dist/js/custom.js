@@ -43,7 +43,7 @@ function init() {
 var _hmt = _hmt || []; 
 (function() { 
 var hm = document.createElement("script"); 
-hm.src = "//hm.baidu.com/hm.js?f80fd4df90476a926eae590912bea3bc"; 
+hm.src = "//hm.baidu.com/hm.js?6336a6c0152e64020baba38a3e157fcf"; 
 var s = document.getElementsByTagName("script")[0]; 
 s.parentNode.insertBefore(hm, s); 
 })(); 

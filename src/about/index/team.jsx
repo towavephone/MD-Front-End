@@ -12,8 +12,8 @@ var ScanModal = React.createClass({
                 return e.preventDefault(); // 阻止模态框的展示
             }
             // console.log(img);
-            // console.log(this.state.img);
-            $('.modal-body img').attr('src', img);
+            console.log(img);
+            this.setState({img});
         }.bind(this));
     },
     render: function () {
@@ -25,7 +25,7 @@ var ScanModal = React.createClass({
                         <h4 className="modal-title">微信二维码扫描</h4>
                     </div>
                     <div className="modal-body">
-                        <img width="60%" style={{margin: '0 auto', border: '1px solid #f1f1f1'}}/>
+                        <img width="60%" src={this.state.img} style={{margin: '0 auto', border: '1px solid #f1f1f1'}}/>
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-sm btn-default" data-dismiss="modal"><i className="icon-check"></i> 已扫描</button>
