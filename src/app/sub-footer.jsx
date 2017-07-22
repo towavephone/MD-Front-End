@@ -20,9 +20,9 @@ var Index = React.createClass({
 									</div>
 									<div className="collapse navbar-collapse" id="navbar-collapse-2">
 										<ul className="nav navbar-nav">
-											<li><a target="_blank" href="http://www.jobui.com/company/13476943/jobs/">职友集</a></li>
-											<li><a target="_blank" href="http://jobs.51job.com/hot/22458504-0.html">前程无忧</a></li>
-											<li><a target="_blank" href="http://www.zgxy.gov.cn/html/201702/24/248061502.html">襄阳襄州网</a></li>
+											<li><a target="_blank" href="http://www.0757rc.com/ent/1718892.html">大佛山人才网</a></li>
+											<li><a target="_blank" href="https://www.tianyancha.com/company/2944739527">天眼查</a></li>
+											<li><a target="_blank" href="http://www.sszp.cn/jw/showent_1718892.aspx">三水招聘网</a></li>
 											<li><a target="_blank" href="http://qy.58.com/987580360454/">58同城</a></li>
 										</ul>
 									</div>
