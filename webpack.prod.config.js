@@ -7,7 +7,7 @@ module.exports = {
         app: [
             './src/app.jsx'
         ],
-        vendor1: ['react-dom', 'react']
+        vendor: ['react-dom', 'react', 'react-select', 'lazysizes', 'bootstrap-growl-ifightcrime']
     },
     resolve: {extensions: ['', '.js', '.jsx']},
     output: {
@@ -67,7 +67,7 @@ module.exports = {
         // // 根据模块调用次数，给模块分配ids，常被调用的ids分配更短的id，使得ids可预测，降低文件大小，该模块推荐使用
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendor1'],
+            names: ['vendor'],
             minChunks: Infinity
         }),
         // 优化代码，合并相似部分，提取公共部分

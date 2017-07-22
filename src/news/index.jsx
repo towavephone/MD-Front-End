@@ -122,7 +122,7 @@ var Index = React.createClass({
                                             var imgs = data.imgs.map(function (data2, index2) {
                                                 return <div key={index2} className="image-box">
                                                     <div className="overlay-container">
-                                                        <img src={data2.img} alt=""/>
+                                                        <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src={data2.img} alt=""/>
                                                         <div className="overlay">
                                                             <div className="overlay-links">
                                                                 <a target="_blank" href={data.link}><i className="fa fa-link"></i></a>

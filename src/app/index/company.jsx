@@ -8,28 +8,28 @@ var Index = React.createClass({
 						<div className="col-md-6">
 							<div className="owl-carousel clients" style={{padding: '30px'}}>
 								<div className="client" style={{paddingTop: '10px'}}>
-									<a href="http://www.hengan.com/" target="_blank"><img src="../../dist/images/恒安集团.png" alt=""/></a>
+									<a href="http://www.hengan.com/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/恒安集团.png" alt=""/></a>
 								</div>
 								<div className="client">
-									<a href="http://www.unicharm.com.cn/index.html" target="_blank"><img src="../../dist/images/尤妮佳.png" alt=""/></a>
+									<a href="http://www.unicharm.com.cn/index.html" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/尤妮佳.png" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '25px'}}>
-									<a href="http://www.kimberly-clark.com.cn/" target="_blank"><img src="../../dist/images/金佰利.jpg" alt=""/></a>
+									<a href="http://www.kimberly-clark.com.cn/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/金佰利.jpg" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '25px'}}>
-									<a href="http://www.pg.com.cn/" target="_blank"><img src="../../dist/images/宝洁.png" alt=""/></a>
+									<a href="http://www.pg.com.cn/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/宝洁.png" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '13px'}}>
-									<a href="http://www.kao.com/cn/" target="_blank"><img src="../../dist/images/花王.png" alt=""/></a>
+									<a href="http://www.kao.com/cn/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/花王.png" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '30px'}}>
-									<a href="http://www.kabuguoji.com/" target="_blank"><img src="../../dist/images/卡布.png" alt=""/></a>
+									<a href="http://www.kabuguoji.com/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/卡布.png" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '25px'}}>
-									<a href="https://www.basf.com/cn/zh.html" target="_blank"><img src="../../dist/images/巴斯夫.png" alt=""/></a>
+									<a href="https://www.basf.com/cn/zh.html" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/巴斯夫.png" alt=""/></a>
 								</div>
 								<div className="client" style={{paddingTop: '42px'}}>
-									<a href="http://www.sumitomo-chem.co.jp/" target="_blank"><img src="../../dist/images/住友.png" alt=""/></a>
+									<a href="http://www.sumitomo-chem.co.jp/" target="_blank"><img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/住友.png" alt=""/></a>
 								</div>
 							</div>
 						</div>

@@ -103,7 +103,7 @@ var Index = React.createClass({
                                         return <div key={index} className={'isotope-item col-xs-12 col-sm-4 col-md-3 ' + data.type}>
                                             <div className="image-box">
                                                 <div className="overlay-container">
-                                                    <img src={data.img} alt="" width="100%"/>
+                                                    <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src={data.img} alt="" width="100%"/>
                                                     <div className="overlay">
                                                         <div className="overlay-links">
                                                             <a href="portfolio-item.html"><i className="fa fa-link"></i></a>

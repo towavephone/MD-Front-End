@@ -46,13 +46,14 @@
     "html-loader": "^0.4.5",
     "html-webpack-plugin": "^2.17.0",
     "json-loader": "^0.5.4",
+    "lazysizes": "^4.0.0-rc3",
     "node-sass": "^4.5.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-select": "^0.9.1",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "react-select": "^0.9.1",
     "webpack": "^1.15.0"
   }
 }

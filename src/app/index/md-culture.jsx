@@ -15,7 +15,7 @@ var Index = React.createClass({
 									<h2 className="title">美登 - 做最受人尊敬企业</h2>
 									<div className="row">
 										<div className="col-md-6">
-											<img src="../../dist/images/美登招牌.jpg" alt=""/>
+											<img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/美登招牌.jpg" alt="美登招牌"/>
 										</div>
 										<div className="col-md-6">
 											<p>广东美登纸业有限公司是一家集研发、设计、生产、销售卫生复合纸、膨化复合纸、湿强纸及高分子等为一体的现代化专业纸品生产企业。广东美登企业旗下设分公司佛山华亨卫生材料有限公司！公司自创立以来就面对市场日益激烈的竞争，凭着以质求存的服务取得了国内外广大消费者的一致信任与支持。</p>

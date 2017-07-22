@@ -178,7 +178,7 @@ var Index = React.createClass({
                             return <div key={index} className="col-xs-12 col-sm-6 col-md-4 masonry-grid-item">
                                 <div className="listing-item">
                                     <div className="overlay-container">
-                                        <img src={data.img} alt="" style={{width: '100%'}}/>
+                                        <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src={data.img} alt="" style={{width: '100%'}}/>
                                         <a href="shop-product.html" className="overlay small">
                                             <i className="fa fa-plus"></i>
                                             <span>查看更多</span>

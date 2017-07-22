@@ -11,9 +11,9 @@ var Index = React.createClass({
 							<p className="lead text-center">初遇美登，爱上美登</p>
 							<div className="vertical hc-tabs">
 								<div className="hc-tabs-top" style={{display: 'table', margin: '0 auto'}}>
-									<img data-tab="#tab1" src="../../dist/images/美登形象一览.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
-									<img data-tab="#tab2" src="../../dist/images/美登奖杯.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
-									<img data-tab="#tab3" src="../../dist/images/美登发展.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
+									<img className="lazyload" src="../../dist/images/unloaded.jpg" data-tab="#tab1" data-src="../../dist/images/美登形象一览.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
+									<img className="lazyload" src="../../dist/images/unloaded.jpg" data-tab="#tab2" data-src="../../dist/images/美登奖杯.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
+									<img className="lazyload" src="../../dist/images/unloaded.jpg" data-tab="#tab3" data-src="../../dist/images/美登发展.jpg" alt="iDea" data-tab-animation-effect="fadeInRightSmall"/>
 									<div className="space"></div>
 								</div>
 								<div className="arrow hidden-sm hidden-xs"><i className="fa fa-caret-up"></i></div>

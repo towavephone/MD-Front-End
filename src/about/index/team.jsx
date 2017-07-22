@@ -76,7 +76,7 @@ var Index = React.createClass({
                             return <div key={index} className="col-sm-4">
                                 <div className="image-box team-member">
                                     <div className="overlay-container">
-                                        <img src={data.img} alt=""/>
+                                        <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src={data.img} alt=""/>
                                         <div className="overlay">
                                             <ul className="social-links colored clearfix">
                                                 <li className="weixin"><a href="#scanModal" data-toggle="modal" data-img={data.weixin}><i className="fa fa-weixin"></i></a></li>

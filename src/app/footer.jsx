@@ -8,7 +8,7 @@ var Index = React.createClass({
 						<div className="row">
 							<div className="col-md-6">
 								<div className="footer-content">
-									<div className="logo-footer"><img id="logo-footer" src="../dist/images/美登大logo.png" alt="" width="200"/></div>
+									<div className="logo-footer"><img className="lazyload" src="../../dist/images/unloaded.jpg" id="logo-footer" data-src="../dist/images/美登大logo.png" alt="" width="200"/></div>
 									<div className="row">
 										<div className="col-sm-6">
 											<p>以智慧、品质、志气为一体</p>

@@ -9,7 +9,7 @@ var Index = React.createClass({
                     <div className="col-md-6">
                         <div className="row">
                             <div className="col-md-6">
-                                <img src="../../dist/images/华亨厂门口.jpg" alt=""/>
+                                <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/华亨厂门口.jpg" alt=""/>
                             </div>
                             <div className="col-md-6">
                                 <p>美登拥有一支技术专业、经验丰富、知识化、年轻化的自主研发、生产、管理和市场营销的精英团队，是国内干法造纸及高吸收性SAP复合纸芯体研发、生产、销售于一体的产业基地。公司致力以“做最受国际尊敬的纸品企业/成为最具有国际性竞争力的企业”的企业愿景，为客户提供优质的产品。</p>
@@ -23,19 +23,19 @@ var Index = React.createClass({
                     <div className="col-md-6">
                         <div className="owl-carousel content-slider-with-controls">
                             <div className="overlay-container margin-top-clear">
-                                <img src="../../dist/images/美登介绍.jpg" alt=""/>
+                                <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/美登介绍.jpg" alt=""/>
                                 <a href="../../dist/images/美登介绍.jpg" className="popup-img overlay" title="美登厂门口"><i className="fa fa-search-plus"></i></a>
                             </div>
                             <div className="overlay-container margin-top-clear">
-                                <img src="../../dist/images/美登介绍2.jpg" alt=""/>
+                                <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/美登介绍2.jpg" alt=""/>
                                 <a href="../../dist/images/美登介绍2.jpg" className="popup-img overlay" title="美登厂内部"><i className="fa fa-search-plus"></i></a>
                             </div>
                             <div className="overlay-container margin-top-clear">
-                                <img src="../../dist/images/华亨介绍.jpg" alt=""/>
+                                <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/华亨介绍.jpg" alt=""/>
                                 <a href="../../dist/images/华亨介绍.jpg" className="popup-img overlay" title="华亨厂门口"><i className="fa fa-search-plus"></i></a>
                             </div>
                             <div className="overlay-container margin-top-clear">
-                                <img src="../../dist/images/华亨介绍2.jpg" alt=""/>
+                                <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src="../../dist/images/华亨介绍2.jpg" alt=""/>
                                 <a href="../../dist/images/华亨介绍2.jpg" className="popup-img overlay" title="华亨厂一览"><i className="fa fa-search-plus"></i></a>
                             </div>
                         </div>

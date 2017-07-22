@@ -6,6 +6,7 @@ var Footer = require('./app/footer');
 var SubFooter = require('./app/sub-footer');
 var helpers = require('./toolers/helpers');
 var template = require('./toolers/template');
+// var lazysizes = require('lazysizes');
 var App = React.createClass({
     getDefaultProps: function () {
         return {pages: ['app', 'product', 'about', 'contact', 'news', 'link', 'join']};

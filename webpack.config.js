@@ -6,8 +6,7 @@ module.exports = {
         app: [
             './src/app.jsx'
         ],
-        vendor1: ['react-dom', 'react'],
-        vendor2: ['bootstrap-growl-ifightcrime']
+        vendor: ['react-select', 'bootstrap-growl-ifightcrime', 'react-dom', 'react', 'lazysizes'],
     },
     resolve: {extensions: ['', '.js', '.jsx']},
     output: {
@@ -58,7 +57,7 @@ module.exports = {
         }),
         // new webpack.optimize.UglifyJsPlugin({minimize: true}),
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendor1', 'vendor2'],
+            names: ['vendor'],
             minChunks: Infinity
         })
         // new webpack.optimize.OccurenceOrderPlugin()
