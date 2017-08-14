@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var compression = require('compression');
+app.use(compression());
 app.use('/build', express.static('build'));
 app.use('/dist', express.static('dist'));
 
