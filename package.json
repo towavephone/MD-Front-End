@@ -19,7 +19,7 @@
     "serve_dev": "./node_modules/.bin/node server.js",
     "serve_prod": "./node_modules/.bin/node server.prod.js",
     "dev": "npm run serve_dev | npm run webpack_dev",
-    "prod": "npm run webpack_prod",
+    "prod": "npm run serve_prod | npm run webpack_prod",
     "eslint": "./node_modules/.bin/eslint --ext .js,.jsx src/** --fix"
   },
   "devDependencies": {
