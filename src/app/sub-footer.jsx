@@ -6,7 +6,7 @@ var Index = React.createClass({
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
-								<p>版权 &copy; 2017.广东美登纸业有限公司，本公司保留一切版权 粤ICP备17011091号-1</p>
+								<p>版权 &copy; 2017.广东美登纸业有限公司，本公司保留一切版权 <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">粤ICP备17106274号-1</a></p>
 							</div>
 							<div className="col-md-4">
 								<nav className="navbar navbar-default" role="navigation">
