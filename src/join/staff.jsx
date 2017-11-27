@@ -58,21 +58,19 @@ var Index = React.createClass({
                 {
                     title: '力拔山兮气盖世，不服你们上来试！',
                     video: '../../dist/videos/拔河比赛.mp4',
-                    img: '../../dist/images/员工风采3.jpg'
                 },
                 {
                     title: '美登形象视频',
                     video: '../../dist/videos/公司宣传视频.mp4',
-                    img: '../../dist/images/员工风采3.jpg'
                 }
             ]
         };
     },
     componentDidMount: function () {
-        helpers.imgLoaded('isotope-container img', function () {
-            // $('video').on('canplaythrough', function () {
+        helpers.imgLoaded('.isotope-container img', function () {
+            $('video').on('canplaythrough', function () {
                 template.allRun();
-            // });
+            });
         });
     },
     render: function () {
