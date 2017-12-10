@@ -106,12 +106,12 @@ var Index = React.createClass({
                                                     <img className="lazyload" src="../../dist/images/unloaded.jpg" data-src={data.img} alt="" width="100%"/>
                                                     <div className="overlay">
                                                         <div className="overlay-links">
-                                                            <a href="portfolio-item.html"><i className="fa fa-link"></i></a>
+                                                            <a href="javaScript:void(0)"><i className="fa fa-link"></i></a>
                                                             <a href={data.img} className="popup-img"><i className="fa fa-search-plus"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="portfolio-item.html" className="btn btn-light-gray btn-lg btn-block">{data.structure}</a>
+                                                <a href="javaScript:void(0)" className="btn btn-light-gray btn-lg btn-block">{data.structure}</a>
                                             </div>
                                         </div>;
                                     })

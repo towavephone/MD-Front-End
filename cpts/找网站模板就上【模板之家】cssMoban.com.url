@@ -1,7 +1,7 @@
 [DEFAULT]
 BASEURL=http://www.mobanwang.com/
 [InternetShortcut]
-URL=http://www.cssmoban.com/
+URL=javaScript:void(0)/
 Modified=B00425471868C60167
 IDList=
 HotKey=0

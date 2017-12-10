@@ -6,7 +6,21 @@ var Footer = require('./app/footer');
 var SubFooter = require('./app/sub-footer');
 var helpers = require('./toolers/helpers');
 var template = require('./toolers/template');
-// var lazysizes = require('lazysizes');
+require('../dist/bootstrap/css/bootstrap.css');
+// 字体图标文件
+require('../dist/fonts/font-awesome/css/font-awesome.css');
+require('../dist/fonts/fontello/css/fontello.css');
+// 首页响应动画滑动图片切换效果
+require('../dist/plugins/rs-plugin/css/settings.css');
+require('../dist/plugins/rs-plugin/css/extralayers.css');
+// 查看图片
+require('../dist/plugins/magnific-popup/magnific-popup.css');
+// 缓慢加载动画效果
+require('../dist/css/animations.css');
+// 幻灯片效果
+require('../dist/plugins/owl-carousel/owl.carousel.css');
+// 自定义css
+require('../dist/css/style.css');
 var App = React.createClass({
     getDefaultProps: function () {
         return {pages: ['app', 'product', 'about', 'contact', 'news', 'link', 'join']};
@@ -62,19 +76,21 @@ var App = React.createClass({
         this.state.cache[Object.keys(obj)[0]] = obj[Object.keys(obj)[0]];
     },
     initContent: function () {
-        if (location.hash === '' && (location.pathname === '/' || location.pathname === '/index.html')) {
-            location.href = '#app/index';
-        }
         var {url, data} = helpers.getHashInfo();
         var pages = this.props.pages;
         var flag = true;
+        var is_home_page = false;
+        if (location.hash === '' && (location.pathname === '/' || location.pathname === '/index.html')) {
+            is_home_page = true;
+            url = 'app/index';
+        }
         for (var i in pages) {
             var page = pages[i];
             var length = page.length;
-            if (url.slice(0, length) === page) {
+            if (is_home_page || url.slice(0, length) === page) {
                 flag = false;
                 require.ensure([], function (require) {
-                    var content = require('./' + page + url.slice(length));
+                    var content = require('./' + url);
                     this.setState({content: content, data: data, url: url});
                 }.bind(this));
                 break;

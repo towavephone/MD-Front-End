@@ -10,39 +10,39 @@ var Index = React.createClass({
                     content: [
                         {
                             name: '快速了解',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登愿景',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登文化',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登数据',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登印象',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登客户',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登产品',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '美登供应商',
-                            link: '#app/index'
+                            link: '#'
                         },
                         {
                             name: '联系我们',
-                            link: '#app/index'
+                            link: '#'
                         }
                     ]
                 },
@@ -102,7 +102,7 @@ var Index = React.createClass({
                     content: [
                         {
                             name: '员工风采',
-                            link: '#join/staff'
+                            link: '#join/index'
                         }
                     ]
                 },

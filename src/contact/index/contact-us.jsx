@@ -2,7 +2,7 @@ var React = require('react');
 var xhr = require('../../toolers/xhr');
 var helpers = require('../../toolers/helpers');
 var Select = require('react-select');
-import 'react-select/dist/react-select.css';
+require('react-select/dist/react-select.css');
 var validator = helpers.validator;
 var Input = React.createClass({
     render: function () {
@@ -210,7 +210,8 @@ var Index = React.createClass({
                         <ul className="nav nav-tabs" role="tablist">
                             {
                                 tablist.map(function (data, index) {
-                                    return <li key={index} className={this.props.id == data.id ? 'active' : ''}><a href={'index.html#contact/index?id=' + data.id} onClick={this.switchType.bind(this, data.id)}><i className="fa fa-user pr-10"></i>{data.type}({data.num})</a></li>;
+                                    var is_active = this.props.id == data.id || ((this.props.id == '' || this.props.id === undefined) && index === 0);
+                                    return <li key={index} className={is_active ? 'active' : ''}><a href={'#contact/index?id=' + data.id} onClick={this.switchType.bind(this, data.id)}><i className="fa fa-user pr-10"></i>{data.type}({data.num})</a></li>;
                                 }.bind(this))
                             }
                         </ul>

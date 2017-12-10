@@ -155,8 +155,8 @@ var Index = React.createClass({
                                                 </div>
                                                 <footer className="clearfix">
                                                     <ul className="links pull-left">
-                                                        <li><i className="fa fa-comment-o pr-5"></i> <a href="#">22 comments</a> |</li>
-                                                        <li><i className="fa fa-tags pr-5"></i> <a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">long tag 3</a> </li>
+                                                        <li><i className="fa fa-comment-o pr-5"></i> <a href="javaScript:void(0)">22 个评论</a> |</li>
+                                                        <li><i className="fa fa-tags pr-5"></i> <a href="javaScript:void(0)">考察 1</a>, <a href="javaScript:void(0)">美登 2</a>, <a href="javaScript:void(0)">襄阳 3</a> </li>
                                                     </ul>
                                                     <a className="pull-right link" target="_blank" href={data.link}><span>Read more</span></a>
                                                 </footer>
@@ -164,13 +164,13 @@ var Index = React.createClass({
                                         }.bind(this))
                                     }
                                     <ul className="pagination">
-                                        <li><a href="#">{'<<'}</a></li>
-                                        <li className="active"><a href="#">1 <span className="sr-only">(current)</span></a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">>></a></li>
+                                        <li><a href="javaScript:void(0)">{'<<'}</a></li>
+                                        <li className="active"><a href="javaScript:void(0)">1 <span className="sr-only">(current)</span></a></li>
+                                        <li><a href="javaScript:void(0)">2</a></li>
+                                        <li><a href="javaScript:void(0)">3</a></li>
+                                        <li><a href="javaScript:void(0)">4</a></li>
+                                        <li><a href="javaScript:void(0)">5</a></li>
+                                        <li><a href="javaScript:void(0)">>></a></li>
                                     </ul>
                             </div>
                         </div>

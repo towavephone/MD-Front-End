@@ -2,14 +2,11 @@ var express = require('express');
 var app = express();
 var compression = require('compression');
 app.use(compression());
-app.use('/build', express.static('build'));
-app.use('/dist', express.static('dist'));
-
-app.get('/index.html', function (req, res) {
+var options = {maxAge: '1y'};
+app.use('/build', express.static('build', options));
+app.use('/dist', express.static('dist', options));
+app.get('*', function (req, res) {
     res.sendFile(__dirname + '/index.html');
-});
-app.get('', function (req, res) {
-    res.redirect('./index.html#app/index');
 });
 
 var server = app.listen(80, function () {

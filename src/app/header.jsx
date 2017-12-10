@@ -59,11 +59,11 @@ var Index = React.createClass({
                     ]
                 },
                 {
-                    url: '#join/staff',
+                    url: '#join/index',
                     name: '加入美登',
                     dropdown: [
                         {
-                            url: '#join/staff',
+                            url: '#join/index',
                             name: '员工风采'
                         }
                     ]
@@ -107,7 +107,7 @@ var Index = React.createClass({
 						<div className="col-md-2">
 							<div className="header-left clearfix">
 								<div className="logo">
-									<a href="#app/index"><img id="logo" src="../dist/images/美登logo.png" alt="iDea"/></a>
+									<a href="#"><img id="logo" src="../dist/images/美登logo.png" alt="iDea"/></a>
 								</div>
 								<div className="site-slogan">
 									广东美登纸业有限公司

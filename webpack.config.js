@@ -6,14 +6,14 @@ module.exports = {
         app: [
             './src/app.jsx'
         ],
-        vendor: ['react-select', 'bootstrap-growl-ifightcrime', 'react-dom', 'react', 'lazysizes'],
+        vendor: ['react-select', 'bootstrap-growl-ifightcrime', 'react-dom', 'react', 'lazysizes']
     },
     resolve: {extensions: ['', '.js', '.jsx']},
     output: {
-        path: 'build/',
-        filename: '[name].[chunkhash].js',
-        publicPath: 'build/',
-        chunkFilename: '[name].chunk.[chunkhash].js'
+        path: __dirname + '/build/',
+        filename: '[name].js',
+        publicPath: '/build/',
+        chunkFilename: '[name].chunk.js'
     },
     module: {
         preLoaders: [{
@@ -32,20 +32,20 @@ module.exports = {
             test: /\.html$/,
             loader: 'html-loader'
         }, {
-            test: /\.scss$/,
-            loader: 'style-loader!css-loader!sass-loader'
+            test: /\.ejs$/,
+            loader: 'ejs-loader'
         }, {
             test: /\.json$/,
             loader: 'json-loader'
         }, {
-            test: /\.(png|jpe?g|gif|svg)$/,
+            test: /\.(png|jpe?g|gif)$/,
             loader: 'url-loader',
             query: {
                 limit: 10240, // 10KB 以下使用 base64
-                name: 'img/[name]-[hash:6].[ext]'
+                name: 'images/[name]-[hash:6].[ext]'
             }
         }, {
-            test: /\.(woff2?|eot|ttf|otf)$/,
+            test: /\.(woff(2)?|ttf|eot|svg)(\?.*$|$)/,
             loader: 'url-loader?limit=10240&name=fonts/[name]-[hash:6].[ext]'
         }]
     },
@@ -60,10 +60,5 @@ module.exports = {
             names: ['vendor'],
             minChunks: Infinity
         })
-        // new webpack.optimize.OccurenceOrderPlugin()
-        // new webpack.ProvidePlugin({
-        //     $: 'jquery',
-        //     jQuery: 'jquery'
-        // })
     ]
 };
