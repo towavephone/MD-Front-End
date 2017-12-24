@@ -3,5 +3,6 @@ release/*
 build/*
 dist/*
 **/*.html
+**/*.ejs
 package.json
 build.sh

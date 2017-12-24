@@ -20,7 +20,7 @@
     "prod:start": "pm2 start server.prod.js && pm2 logs",
     "dev:start": "yarn serve_dev | yarn webpack_dev",
     "prod:stop": "pm2 delete server.prod",
-    "eslint": "eslint --ext .js,.jsx src/** --fix"
+    "eslint": "eslint --ext .js,.jsx src/**"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
