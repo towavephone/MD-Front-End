@@ -1,17 +1,18 @@
 #!/bin/bash
-rm -rf release && mkdir release
-cp -r build dist index.html release
-cd ./release
-ftp -p -n <<- EOF
+rm -rf release && rm -f release.tar.gz
+mkdir release && cp -r build dist index.html release
+tar -zcvf release.tar.gz release/
+ftp -n <<- EOF
 open 39.108.174.8
 user ftpadmin 201213138060tbt,
 binary
 hash
+passive
 cd MD-Front-End
-rm -rf dist build index.html
+del release.tar.gz
 lcd .
 prompt
-mput *.*
+put release.tar.gz
 close
 bye
 EOF

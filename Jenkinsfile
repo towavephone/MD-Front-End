@@ -24,7 +24,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        sh './build.sh'
+        sh 'apt-get update && apt-get install ftp && chmod 777 build.sh && ./build.sh'
       }
     }
   }
