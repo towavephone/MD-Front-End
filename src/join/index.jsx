@@ -57,7 +57,7 @@ var Index = React.createClass({
                     img: '../../dist/images/员工风采2.jpg'
                 },
                 {
-                    title: '惠州巽寮湾之行444',
+                    title: '惠州巽寮湾之行',
                     img: '../../dist/images/员工风采3.jpg'
                 },
                 {
