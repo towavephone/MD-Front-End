@@ -28,4 +28,16 @@ pipeline {
       }
     }
   }
+  post {
+      success {
+          mail to: '634407147@qq.com',
+              subject: "Success Pipeline: ${currentBuild.fullDisplayName}",
+              body: "Success! Please enter http://www.meidengpaper.com"
+      }
+      failure {
+          mail to: '634407147@qq.com',
+              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+              body: "Something is wrong with ${env.BUILD_URL}"
+      }
+  }
 }

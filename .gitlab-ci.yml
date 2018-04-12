@@ -1,0 +1,33 @@
+cache:
+   untracked: true
+
+stages:
+- install
+- lint_build
+- deploy
+
+install:
+  stage: install
+  script:
+  - yarn
+
+lint:
+  stage: lint_build
+  script:
+  - yarn eslint
+
+build:
+  stage: lint_build
+  script:
+  - yarn prod:build
+  
+deploy:
+  stage: deploy
+  script:
+    - ls
+    - cp -r build dist index.html /etc/gitlab-runner/meideng
+  only:
+  - master
+  environment:
+    name: production
+    url: http://120.79.62.126:81
