@@ -1,10 +1,11 @@
 cache:
-   untracked: true
+  paths:
+  - node_modules
 
 stages:
 - install
-- lint_build
-- deploy
+- lint
+- build_deploy
 
 install:
   stage: install
@@ -12,19 +13,15 @@ install:
   - yarn
 
 lint:
-  stage: lint_build
+  stage: lint
   script:
   - yarn eslint
 
-build:
-  stage: lint_build
+build_deploy:
+  stage: build_deploy
   script:
-  - yarn prod:build
-  
-deploy:
-  stage: deploy
-  script:
-    - ls
+    - yarn prod:build
+    - rm -rf /etc/gitlab-runner/meideng && mkdir /etc/gitlab-runner/meideng
     - cp -r build dist index.html /etc/gitlab-runner/meideng
   only:
   - master
