@@ -26,7 +26,7 @@ module.exports = {
         loaders: [{
             test: /\.(jsx|js)?$/,
             loader: 'babel-loader',
-            exclude: [/node_modules/, /build/]
+            include: [/src/, /dist/]
         }, {
             test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
