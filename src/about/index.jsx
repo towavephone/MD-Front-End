@@ -24,7 +24,7 @@ var Index = React.createClass({
                     img: 'dist/images/唐燕.jpg',
                     name: '唐燕',
                     role: '财务总监',
-                    wisdom: '青年时准备好材料，想造一座通向月亮的桥，或者在地上造二所宫殿或庙宇。活到中年，终于决定搭一个棚。'
+                    wisdom: '不管怎样的事情，都请安静地愉快吧!这是人生。我们要依样地接受人生，勇敢地、大胆地，而且永远地微笑着。'
                 },
                 {
                     img: 'dist/images/任红英.jpg',

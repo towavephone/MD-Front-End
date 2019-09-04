@@ -50,7 +50,7 @@ var Index = React.createClass({
                 img: '../../dist/images/唐燕.jpg',
                 name: '唐燕',
                 position: '财务总监',
-                saying: '青年时准备好材料，想造一座通向月亮的桥，或者在地上造二所宫殿或庙宇。活到中年，终于决定搭一个棚。',
+                saying: '不管怎样的事情，都请安静地愉快吧!这是人生。我们要依样地接受人生，勇敢地、大胆地，而且永远地微笑着。',
                 weixin: '../../dist/images/唐燕二维码.jpg',
                 qq: '651207923',
                 mobile: '13923287557'

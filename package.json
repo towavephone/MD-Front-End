@@ -15,7 +15,7 @@
   "homepage": "https://github.com/towavephone/MD-Front-End#readme",
   "scripts": {
     "webpack_dev": "webpack -w",
-    "prod:build": "webpack -p --config webpack.prod.config.js",
+    "prod:build": "rimraf ./build/* && webpack -p --config webpack.prod.config.js",
     "serve_dev": "node server.js",
     "prod:start": "pm2 start server.prod.js && pm2 logs",
     "dev:start": "yarn serve_dev | yarn webpack_dev",

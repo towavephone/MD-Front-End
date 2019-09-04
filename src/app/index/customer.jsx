@@ -30,7 +30,7 @@ var Index = React.createClass({
 										<img src="./../dist/images/唐燕.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
 									</div>
 									<div className="testimonial-body">
-										<p>青年时准备好材料，想造一座通向月亮的桥，或者在地上造二所宫殿或庙宇。活到中年，终于决定搭一个棚。</p>
+										<p>不管怎样的事情，都请安静地愉快吧!这是人生。我们要依样地接受人生，勇敢地、大胆地，而且永远地微笑着。</p>
 										<div className="testimonial-info-1">- 唐燕</div>
 										<div className="testimonial-info-2">By 广东美登纸业有限公司 财务总监</div>
 									</div>
