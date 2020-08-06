@@ -47,7 +47,7 @@ var Index = React.createClass({
 										<img src="./../dist/images/任红英.jpg" alt="Jane Doe" title="Jane Doe" className="img-circle"/>
 									</div>
 									<div className="testimonial-body">
-										<p>让青春反抗老朽，长发反抗秃头，热情反抗陈腐，未来反抗往昔，这是多么自然！</p>
+										<p>涓滴之水终可以磨损大石，不是由于它力量强大，而是由于昼夜不舍的滴坠。</p>
 										<div className="testimonial-info-1">- 任红英</div>
 										<div className="testimonial-info-2">By 广东美登纸业有限公司 总经理</div>
 									</div>

@@ -58,7 +58,7 @@ var Index = React.createClass({
                 img: '../../dist/images/任红英.jpg',
                 name: '任红英',
                 position: '总经理',
-                saying: '让青春反抗老朽，长发反抗秃头，热情反抗陈腐，未来反抗往昔，这是多么自然！',
+                saying: '涓滴之水终可以磨损大石，不是由于它力量强大，而是由于昼夜不舍的滴坠。',
                 weixin: '../../dist/images/任红英二维码.jpg',
                 qq: '249059181',
                 mobile: '15015595591'
